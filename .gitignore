@@ -27,9 +27,10 @@ technical
 # Deprecated versions
 deprecated
 
-# Backup files and desktop.ini
+# Backup files, desktop.ini, and .ssh folder
 *.bak
 desktop.ini
+.ssh
 
 # Test files
 devdoc/dbdesign/Optigrade-test.sql
