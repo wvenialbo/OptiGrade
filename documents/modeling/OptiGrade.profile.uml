@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_SY6zQMWTEeO0Uf7iyNbhuw" name="OptiGrade Profile" metaclassReference="_fN4MIMWWEeO0Uf7iyNbhuw" metamodelReference="_SY6zQcWTEeO0Uf7iyNbhuw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YG_T4cWUEeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_lClxYMXFEeOo1LBePScnfA" name="OptiGradeProfile" nsURI="http:///schemas/OptiGradeProfile/_lCcAYMXFEeOo1LBePScnfA/3" nsPrefix="OptiGradeProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lClxZsXFEeOo1LBePScnfA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lClxZ8XFEeOo1LBePScnfA" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lClxaMXFEeOo1LBePScnfA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lClxacXFEeOo1LBePScnfA" key="Copyright" value="Copyright © 1997-2014, OptiSoft Ltd. All rights reserved."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lClxasXFEeOo1LBePScnfA" key="Date" value="2014-04-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lClxa8XFEeOo1LBePScnfA" key="Author" value="Waldemar Villamayor-Venialbo"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_lClxYcXFEeOo1LBePScnfA" name="System">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lClxYsXFEeOo1LBePScnfA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0i_28MWTEeO0Uf7iyNbhuw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_lClxY8XFEeOo1LBePScnfA" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Nx95ccWXEeO0Uf7iyNbhuw" name="OptiGradeProfile" nsURI="http:///schemas/OptiGradeProfile/_Nx95cMWXEeO0Uf7iyNbhuw/2" nsPrefix="OptiGradeProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nx95d8WXEeO0Uf7iyNbhuw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nx95eMWXEeO0Uf7iyNbhuw" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nx95ecWXEeO0Uf7iyNbhuw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nx95esWXEeO0Uf7iyNbhuw" key="Copyright" value="Copyright © 1997-2014, OptiSoft Ltd. All rights reserved."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nx95e8WXEeO0Uf7iyNbhuw" key="Date" value="2014-04-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nx95fMWXEeO0Uf7iyNbhuw" key="Author" value="Waldemar Villamayor-Venialbo"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Nx95csWXEeO0Uf7iyNbhuw" name="System">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nx95c8WXEeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0i_28MWTEeO0Uf7iyNbhuw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Nx95dMWXEeO0Uf7iyNbhuw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_sEc18cWWEeO0Uf7iyNbhuw" name="OptiGradeProfile" nsURI="http:///schemas/OptiGradeProfile/_sEc18MWWEeO0Uf7iyNbhuw/1" nsPrefix="OptiGradeProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sEmm8MWWEeO0Uf7iyNbhuw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEmm8cWWEeO0Uf7iyNbhuw" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEmm8sWWEeO0Uf7iyNbhuw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEmm88WWEeO0Uf7iyNbhuw" key="Copyright" value="Copyright © 1997-2014, OptiSoft Ltd. All rights reserved."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEmm9MWWEeO0Uf7iyNbhuw" key="Date" value="2014-04-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sEmm9cWWEeO0Uf7iyNbhuw" key="Author" value="Waldemar Villamayor-Venialbo"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_sEc18sWWEeO0Uf7iyNbhuw" name="System">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sEc188WWEeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0i_28MWTEeO0Uf7iyNbhuw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_sEc19MWWEeO0Uf7iyNbhuw" name="actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_YHId0MWUEeO0Uf7iyNbhuw" name="OptiGradeProfile" nsURI="http:///schemas/OptiGradeProfile/_YG_T4MWUEeO0Uf7iyNbhuw/0" nsPrefix="OptiGradeProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YHu6wMWUEeO0Uf7iyNbhuw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHu6wcWUEeO0Uf7iyNbhuw" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHu6wsWUEeO0Uf7iyNbhuw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHu6w8WUEeO0Uf7iyNbhuw" key="Copyright" value="Copyright © 1997-2014, OptiSoft Ltd. All rights reserved."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHu6xMWUEeO0Uf7iyNbhuw" key="Date" value="2014-04-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YHu6xcWUEeO0Uf7iyNbhuw" key="Author" value="Waldemar Villamayor-Venialbo"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_YHId0cWUEeO0Uf7iyNbhuw" name="System">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YHId0sWUEeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0i_28MWTEeO0Uf7iyNbhuw"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_fN4MIMWWEeO0Uf7iyNbhuw" alias="Actor">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SY6zQcWTEeO0Uf7iyNbhuw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SY6zQsWTEeO0Uf7iyNbhuw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_0i_28MWTEeO0Uf7iyNbhuw" name="System">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LGbgQMWXEeO0Uf7iyNbhuw" name="base_Actor" association="_LGkqMMWXEeO0Uf7iyNbhuw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_LGkqMMWXEeO0Uf7iyNbhuw" name="E_System_Actor1" memberEnd="_LGkqMcWXEeO0Uf7iyNbhuw _LGbgQMWXEeO0Uf7iyNbhuw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LGkqMcWXEeO0Uf7iyNbhuw" name="extension_System" type="_0i_28MWTEeO0Uf7iyNbhuw" aggregation="composite" association="_LGkqMMWXEeO0Uf7iyNbhuw"/>
+  </packagedElement>
+</uml:Profile>

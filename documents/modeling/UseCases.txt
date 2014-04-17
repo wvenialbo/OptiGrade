@@ -1,0 +1,27 @@
+Tentaive
+
+    Use case                       Owner     Admin   Operator     User
+----------------------------------------------------------------------------------------------------
+ 1. Ingresar al sistema            *         *       *            *
+ 2. Iniciar sesión                 *         *       *
+ 3. Consultar sesión               *         *       *
+ 4. Cerrar sesión                  *         *       *
+ 5. Facturar sesión (extend->4)
+ 6. Consultar tarifas              *         *       *
+ 7. Actualizar tarifas             *         *
+ 8. Generar reportes (admin)       *         *
+ 9. Ejecutar aplicación            *         *       *            *
+10. Utilizar recursos              *         *       *            *
+11. Salir del sistema              *         *       *            *
+12. C administrador                *
+13. R administrador                *         *       *
+14. U administrador                *
+15. D administrador                *
+16. C operador                     *         *
+17. R operador                     *         *       *
+18. U operador                     *         *
+19. D operador                     *         *
+16. C user                         *         *       *
+17. R user                         *         *       *
+18. U user                         *         *       *
+19. D user                         *         *

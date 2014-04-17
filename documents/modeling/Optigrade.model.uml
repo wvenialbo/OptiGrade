@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:l2="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L2" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Model xmi:id="_yLxoQMWQEeO0Uf7iyNbhuw" name="OptiGrade Model">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_MLHA0MXNEeOo1LBePScnfA">
+      <body>A visitor is any unregistered user or a registered user whose account was not activated yet.&#xD;
+When a visitor signs up and his account activated, a new user is created and assigned the role &quot;Owner&quot; or &quot;Manager&quot;, respectively, according his account is &quot;Individual&quot; or &quot;Corporative&quot;.&#xD;
+There are only one owner or manager per account.</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_yLxoQcWQEeO0Uf7iyNbhuw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Component" xmi:id="_WUVx4MWREeO0Uf7iyNbhuw" name="User Authentication" useCase="_00ifoMWjEeO0Uf7iyNbhuw _AAbwUMWkEeO0Uf7iyNbhuw _DRwXIMWkEeO0Uf7iyNbhuw _vgeIgMWkEeO0Uf7iyNbhuw _yBcQcMWkEeO0Uf7iyNbhuw _9djucMWkEeO0Uf7iyNbhuw _1UAigMWmEeOo1LBePScnfA __qf1MMWmEeOo1LBePScnfA">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_00ifoMWjEeO0Uf7iyNbhuw" name="Sign up" subject="_WUVx4MWREeO0Uf7iyNbhuw _WrB-IMWSEeO0Uf7iyNbhuw">
+        <extend xmi:type="uml:Extend" xmi:id="_fvjHQMXBEeOo1LBePScnfA" extendedCase="_AAbwUMWkEeO0Uf7iyNbhuw" extensionLocation="_fv_zMMXBEeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AAbwUMWkEeO0Uf7iyNbhuw" name="Sign in" subject="_WUVx4MWREeO0Uf7iyNbhuw _WrB-IMWSEeO0Uf7iyNbhuw">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fv_zMMXBEeOo1LBePScnfA" name="point"/>
+        <include xmi:type="uml:Include" xmi:id="_FASjQMWpEeOo1LBePScnfA" addition="_9djucMWkEeO0Uf7iyNbhuw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DRwXIMWkEeO0Uf7iyNbhuw" name="Activate Account" subject="_WUVx4MWREeO0Uf7iyNbhuw _WrB-IMWSEeO0Uf7iyNbhuw">
+        <include xmi:type="uml:Include" xmi:id="_GcYt0MWpEeOo1LBePScnfA" addition="_9djucMWkEeO0Uf7iyNbhuw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_vgeIgMWkEeO0Uf7iyNbhuw" name="Sign out" subject="_WUVx4MWREeO0Uf7iyNbhuw _d2xzIMWSEeO0Uf7iyNbhuw"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_9djucMWkEeO0Uf7iyNbhuw" name="Log in" subject="_WUVx4MWREeO0Uf7iyNbhuw"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yBcQcMWkEeO0Uf7iyNbhuw" name="Sign down" subject="_WUVx4MWREeO0Uf7iyNbhuw _IDifkMWuEeOo1LBePScnfA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_1UAigMWmEeOo1LBePScnfA" name="Change password" subject="_WUVx4MWREeO0Uf7iyNbhuw _d2xzIMWSEeO0Uf7iyNbhuw"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="__qf1MMWmEeOo1LBePScnfA" name="Request new password" subject="_WUVx4MWREeO0Uf7iyNbhuw _d2xzIMWSEeO0Uf7iyNbhuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_WrB-IMWSEeO0Uf7iyNbhuw" name="Visitor" useCase="_00ifoMWjEeO0Uf7iyNbhuw _AAbwUMWkEeO0Uf7iyNbhuw _DRwXIMWkEeO0Uf7iyNbhuw"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_d2xzIMWSEeO0Uf7iyNbhuw" name="User" useCase="_vgeIgMWkEeO0Uf7iyNbhuw _1UAigMWmEeOo1LBePScnfA __qf1MMWmEeOo1LBePScnfA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WuU9MMWnEeOo1LBePScnfA" name="A visitor signs up" memberEnd="_WuU9McWnEeOo1LBePScnfA _WuU9NMWnEeOo1LBePScnfA" navigableOwnedEnd="_WuU9NMWnEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WuU9McWnEeOo1LBePScnfA" name="visitor" type="_WrB-IMWSEeO0Uf7iyNbhuw" association="_WuU9MMWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WuU9MsWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuU9M8WnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WuU9NMWnEeOo1LBePScnfA" name="sign up" type="_00ifoMWjEeO0Uf7iyNbhuw" association="_WuU9MMWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WuU9NcWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuU9NsWnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YbrP0MWnEeOo1LBePScnfA" name="A visitor signs in" memberEnd="_YbrP0cWnEeOo1LBePScnfA _YbrP1MWnEeOo1LBePScnfA" navigableOwnedEnd="_YbrP1MWnEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YbrP0cWnEeOo1LBePScnfA" name="visitor" type="_WrB-IMWSEeO0Uf7iyNbhuw" association="_YbrP0MWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YbrP0sWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YbrP08WnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YbrP1MWnEeOo1LBePScnfA" name="sign in" type="_AAbwUMWkEeO0Uf7iyNbhuw" association="_YbrP0MWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YbrP1cWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YbrP1sWnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZwCasMWnEeOo1LBePScnfA" name="A visitor activates Account" memberEnd="_ZwCascWnEeOo1LBePScnfA _ZwCatMWnEeOo1LBePScnfA" navigableOwnedEnd="_ZwCatMWnEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZwCascWnEeOo1LBePScnfA" name="visitor" type="_WrB-IMWSEeO0Uf7iyNbhuw" association="_ZwCasMWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZwCassWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZwCas8WnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZwCatMWnEeOo1LBePScnfA" name="confirm suscription" type="_DRwXIMWkEeO0Uf7iyNbhuw" association="_ZwCasMWnEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZwCatcWnEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZwCatsWnEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_c5DkoMWoEeOo1LBePScnfA" name="A user changes password" memberEnd="_c5DkocWoEeOo1LBePScnfA _c5DkpMWoEeOo1LBePScnfA" navigableOwnedEnd="_c5DkpMWoEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_c5DkocWoEeOo1LBePScnfA" name="user" type="_d2xzIMWSEeO0Uf7iyNbhuw" association="_c5DkoMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c5DkosWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c5Dko8WoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_c5DkpMWoEeOo1LBePScnfA" name="change password" type="_1UAigMWmEeOo1LBePScnfA" association="_c5DkoMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c5DkpcWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c5DkpsWoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_h1zLcMWoEeOo1LBePScnfA" name="A user request new password" memberEnd="_h1zLccWoEeOo1LBePScnfA _h1zLdMWoEeOo1LBePScnfA" navigableOwnedEnd="_h1zLdMWoEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h1zLccWoEeOo1LBePScnfA" name="user" type="_d2xzIMWSEeO0Uf7iyNbhuw" association="_h1zLcMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1zLcsWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1zLc8WoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h1zLdMWoEeOo1LBePScnfA" name="request new password" type="__qf1MMWmEeOo1LBePScnfA" association="_h1zLcMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1zLdcWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1zLdsWoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oz0tgMWoEeOo1LBePScnfA" name="A user signs out" memberEnd="_oz0tgcWoEeOo1LBePScnfA _oz0thMWoEeOo1LBePScnfA" navigableOwnedEnd="_oz0thMWoEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oz0tgcWoEeOo1LBePScnfA" name="user" type="_d2xzIMWSEeO0Uf7iyNbhuw" association="_oz0tgMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oz0tgsWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oz0tg8WoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oz0thMWoEeOo1LBePScnfA" name="sign out" type="_vgeIgMWkEeO0Uf7iyNbhuw" association="_oz0tgMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oz0thcWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oz0thsWoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uSeukMWoEeOo1LBePScnfA" name="An owner signs down" memberEnd="_uSeukcWoEeOo1LBePScnfA _uSeulMWoEeOo1LBePScnfA" navigableOwnedEnd="_uSeulMWoEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uSeukcWoEeOo1LBePScnfA" name="owner" type="_IDifkMWuEeOo1LBePScnfA" association="_uSeukMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uSeuksWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uSeuk8WoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uSeulMWoEeOo1LBePScnfA" name="sign down" type="_yBcQcMWkEeO0Uf7iyNbhuw" association="_uSeukMWoEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uSeulcWoEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uSeulsWoEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_3D3SYMWtEeOo1LBePScnfA" name="Administrator">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Po4D0MWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6JIaMMWtEeOo1LBePScnfA" name="Operator">
+      <generalization xmi:type="uml:Generalization" xmi:id="_F9060MWvEeOo1LBePScnfA" general="_d2xzIMWSEeO0Uf7iyNbhuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6t4GAMWtEeOo1LBePScnfA" name="Professor" isLeaf="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_J3nP0MWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_IDifkMWuEeOo1LBePScnfA" name="Owner" useCase="_yBcQcMWkEeO0Uf7iyNbhuw">
+      <generalization xmi:type="uml:Generalization" xmi:id="_doVoUMWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_jen7sMWuEeOo1LBePScnfA" name="Student" isLeaf="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HbQiIMWvEeOo1LBePScnfA" general="_d2xzIMWSEeO0Uf7iyNbhuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6R8igMWuEeOo1LBePScnfA" name="Manager">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Vz3mcMWvEeOo1LBePScnfA" general="_3D3SYMWtEeOo1LBePScnfA"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_e819IMWvEeOo1LBePScnfA" general="_IDifkMWuEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_kO2lIMW2EeOo1LBePScnfA" name="User Management" useCase="_IEpjwMW3EeOo1LBePScnfA _NQ3J8MW3EeOo1LBePScnfA _ejlO8MW3EeOo1LBePScnfA _tDCiIMW3EeOo1LBePScnfA _bPcLYMW8EeOo1LBePScnfA _jl1OkMW8EeOo1LBePScnfA _kiPMcMW8EeOo1LBePScnfA _PT4UIMXDEeOo1LBePScnfA">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IEpjwMW3EeOo1LBePScnfA" name="Create User" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <include xmi:type="uml:Include" xmi:id="_CfecQMW9EeOo1LBePScnfA" addition="_bPcLYMW8EeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NQ3J8MW3EeOo1LBePScnfA" name="Delete User" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extend xmi:type="uml:Extend" xmi:id="_B9_5IMW4EeOo1LBePScnfA" extendedCase="_ejlO8MW3EeOo1LBePScnfA" extensionLocation="_BH2UQMW4EeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ejlO8MW3EeOo1LBePScnfA" name="View User details" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_BH2UQMW4EeOo1LBePScnfA" name="point"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_tDCiIMW3EeOo1LBePScnfA" name="Modify User details" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extend xmi:type="uml:Extend" xmi:id="_BHiyQMW4EeOo1LBePScnfA" extendedCase="_ejlO8MW3EeOo1LBePScnfA" extensionLocation="_BH2UQMW4EeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_bPcLYMW8EeOo1LBePScnfA" name="Assign role" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_YTepMcW_EeOo1LBePScnfA" name="point"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_jl1OkMW8EeOo1LBePScnfA" name="Grant provileges" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extend xmi:type="uml:Extend" xmi:id="_j4qjoMW_EeOo1LBePScnfA" extendedCase="_bPcLYMW8EeOo1LBePScnfA" extensionLocation="_YTepMcW_EeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_kiPMcMW8EeOo1LBePScnfA" name="Revoke privileges" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <extend xmi:type="uml:Extend" xmi:id="_YTU4MMW_EeOo1LBePScnfA" extendedCase="_bPcLYMW8EeOo1LBePScnfA" extensionLocation="_YTepMcW_EeOo1LBePScnfA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_PT4UIMXDEeOo1LBePScnfA" name="Enroll Student" subject="_kO2lIMW2EeOo1LBePScnfA">
+        <include xmi:type="uml:Include" xmi:id="_oNYkUMXDEeOo1LBePScnfA" addition="_IEpjwMW3EeOo1LBePScnfA"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KtFwMMW4EeOo1LBePScnfA" name="An administrator creates user" memberEnd="_KtFwMcW4EeOo1LBePScnfA _KtFwNMW4EeOo1LBePScnfA" navigableOwnedEnd="_KtFwNMW4EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KtFwMcW4EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_KtFwMMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KtFwMsW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KtFwM8W4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KtFwNMW4EeOo1LBePScnfA" name="create user" type="_IEpjwMW3EeOo1LBePScnfA" association="_KtFwMMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KtFwNcW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KtFwNsW4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OvNh0MW4EeOo1LBePScnfA" name="An administrator deletes user" memberEnd="_OvNh0cW4EeOo1LBePScnfA _OvNh1MW4EeOo1LBePScnfA" navigableOwnedEnd="_OvNh1MW4EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OvNh0cW4EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_OvNh0MW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvNh0sW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvNh08W4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OvNh1MW4EeOo1LBePScnfA" name="delete user" type="_NQ3J8MW3EeOo1LBePScnfA" association="_OvNh0MW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvNh1cW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvNh1sW4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aUjNQMW4EeOo1LBePScnfA" name="An administrator view user details" memberEnd="_aUjNQcW4EeOo1LBePScnfA _aUjNRMW4EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aUjNQcW4EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_aUjNQMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUjNQsW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aUjNQ8W4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aUjNRMW4EeOo1LBePScnfA" name="view user details" type="_ejlO8MW3EeOo1LBePScnfA" association="_aUjNQMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUjNRcW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aUjNRsW4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vxIqoMW4EeOo1LBePScnfA" name="An administrator modifies user details" memberEnd="_vxIqocW4EeOo1LBePScnfA _vxIqpMW4EeOo1LBePScnfA" navigableOwnedEnd="_vxIqpMW4EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vxIqocW4EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_vxIqoMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vxIqosW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vxIqo8W4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vxIqpMW4EeOo1LBePScnfA" name="modify user details" type="_tDCiIMW3EeOo1LBePScnfA" association="_vxIqoMW4EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vxIqpcW4EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vxIqpsW4EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4drAIMW8EeOo1LBePScnfA" name="An administrator assigns role" memberEnd="_4drAIcW8EeOo1LBePScnfA _4drAJMW8EeOo1LBePScnfA" navigableOwnedEnd="_4drAJMW8EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4drAIcW8EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_4drAIMW8EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4drAIsW8EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4drAI8W8EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4drAJMW8EeOo1LBePScnfA" name="assign role" type="_bPcLYMW8EeOo1LBePScnfA" association="_4drAIMW8EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4drAJcW8EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4drAJsW8EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rePDUMW-EeOo1LBePScnfA" name="An administrator revokes privileges" memberEnd="_rePDUcW-EeOo1LBePScnfA _rePDVMW-EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_rePDUcW-EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_rePDUMW-EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rePDUsW-EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rePDU8W-EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_rePDVMW-EeOo1LBePScnfA" name="revoke privileges" type="_kiPMcMW8EeOo1LBePScnfA" association="_rePDUMW-EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rePDVcW-EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rePDVsW-EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5H1FgMW-EeOo1LBePScnfA" name="An administrator grants provileges" memberEnd="_5H1FgcW-EeOo1LBePScnfA _5H1FhMW-EeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5H1FgcW-EeOo1LBePScnfA" name="administrator" type="_3D3SYMWtEeOo1LBePScnfA" association="_5H1FgMW-EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5H1FgsW-EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5H1Fg8W-EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5H1FhMW-EeOo1LBePScnfA" name="grant provileges" type="_jl1OkMW8EeOo1LBePScnfA" association="_5H1FgMW-EeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5H1FhcW-EeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5H1FhsW-EeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_t_Y_MMXDEeOo1LBePScnfA" name="An operator enroll student" memberEnd="_t_Y_McXDEeOo1LBePScnfA _t_Y_NMXDEeOo1LBePScnfA" navigableOwnedEnd="_t_Y_NMXDEeOo1LBePScnfA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_t_Y_McXDEeOo1LBePScnfA" name="operator" type="_6JIaMMWtEeOo1LBePScnfA" association="_t_Y_MMXDEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t_Y_MsXDEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t_Y_M8XDEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_t_Y_NMXDEeOo1LBePScnfA" name="enroll student" type="_PT4UIMXDEeOo1LBePScnfA" association="_t_Y_MMXDEeOo1LBePScnfA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t_Y_NcXDEeOo1LBePScnfA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t_Y_NsXDEeOo1LBePScnfA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kd3TIMWREeO0Uf7iyNbhuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KeBEIMWREeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L2#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/StandardL2.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_zidfoMWWEeO0Uf7iyNbhuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zjDVgMWWEeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OptiGrade.profile.uml#_lClxYMXFEeOo1LBePScnfA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OptiGrade.profile.uml#_SY6zQMWTEeO0Uf7iyNbhuw"/>
+    </profileApplication>
+  </uml:Model>
+  <l2:Subsystem xmi:id="_YlPdgMWREeO0Uf7iyNbhuw" base_Component="_WUVx4MWREeO0Uf7iyNbhuw"/>
+  <l2:Subsystem xmi:id="_oJiSAMW2EeOo1LBePScnfA" base_Component="_kO2lIMW2EeOo1LBePScnfA"/>
+</xmi:XMI>

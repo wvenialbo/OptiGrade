@@ -1,0 +1,6 @@
+Notes
+=====
+
+1) Individual accounts does no have other administrative user than its owner.
+2) Only corporative accounts can have professors, operators, and administrators.
+3) Both types of accounts can have students.

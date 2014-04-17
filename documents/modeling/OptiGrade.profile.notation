@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_SY6zQ8WTEeO0Uf7iyNbhuw" type="PapyrusUMLProfileDiagram" name="OptiGrade Profile" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_0i_28cWTEeO0Uf7iyNbhuw" type="1026">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0i_288WTEeO0Uf7iyNbhuw" type="1034"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_0i_29MWTEeO0Uf7iyNbhuw" type="1071">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_0i_29cWTEeO0Uf7iyNbhuw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_0i_29sWTEeO0Uf7iyNbhuw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_0i_298WTEeO0Uf7iyNbhuw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0i_2-MWTEeO0Uf7iyNbhuw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_0i_2-cWTEeO0Uf7iyNbhuw" type="1019">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_0i_2-sWTEeO0Uf7iyNbhuw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_0i_2-8WTEeO0Uf7iyNbhuw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_0i_2_MWTEeO0Uf7iyNbhuw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0i_2_cWTEeO0Uf7iyNbhuw"/>
+    </children>
+    <element xmi:type="uml:Stereotype" href="OptiGrade.profile.uml#_0i_28MWTEeO0Uf7iyNbhuw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0i_28sWTEeO0Uf7iyNbhuw" x="21" y="31"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fN4MIcWWEeO0Uf7iyNbhuw" type="1031">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fOB9IMWWEeO0Uf7iyNbhuw" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fOB9IcWWEeO0Uf7iyNbhuw" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fOB9IsWWEeO0Uf7iyNbhuw" key="StereotypeList" value="StandardProfileL2::Metaclass"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fOB9I8WWEeO0Uf7iyNbhuw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fOB9JMWWEeO0Uf7iyNbhuw" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fOB9JcWWEeO0Uf7iyNbhuw" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fN4MI8WWEeO0Uf7iyNbhuw" type="1084"/>
+    <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN4MJMWWEeO0Uf7iyNbhuw" x="67" y="176"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_SY6zRMWTEeO0Uf7iyNbhuw"/>
+  <element xmi:type="uml:Profile" href="OptiGrade.profile.uml#_SY6zQMWTEeO0Uf7iyNbhuw"/>
+  <edges xmi:type="notation:Connector" xmi:id="_LG4MMMWXEeO0Uf7iyNbhuw" type="1013" source="_0i_28cWTEeO0Uf7iyNbhuw" target="_fN4MIcWWEeO0Uf7iyNbhuw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_LG4MMcWXEeO0Uf7iyNbhuw"/>
+    <element xmi:type="uml:Extension" href="OptiGrade.profile.uml#_LGkqMMWXEeO0Uf7iyNbhuw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LG4MMsWXEeO0Uf7iyNbhuw" points="[50, 3, -452, -30]$[452, 37, -50, 4]"/>
+  </edges>
+</notation:Diagram>
