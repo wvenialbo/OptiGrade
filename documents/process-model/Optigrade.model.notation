@@ -67,7 +67,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Wr7WB8WSEeO0Uf7iyNbhuw" x="20" y="80"/>
       </children>
       <element xmi:type="uml:Actor" href="Optigrade.model.uml#_WrB-IMWSEeO0Uf7iyNbhuw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wr7WAcWSEeO0Uf7iyNbhuw" x="30" y="158"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wr7WAcWSEeO0Uf7iyNbhuw" x="30" y="212"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_d2xzIcWSEeO0Uf7iyNbhuw" type="2011" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_d2xzI8WSEeO0Uf7iyNbhuw" type="5014">
@@ -95,11 +95,31 @@
       <element xmi:type="uml:Actor" href="Optigrade.model.uml#_IDifkMWuEeOo1LBePScnfA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IDsQkcWuEeOo1LBePScnfA" x="844" y="336"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_Y4PQYMXxEeOBqZqUlO-npA" type="2011" lineWidth="1">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fF6TkMXxEeOBqZqUlO-npA" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fF6TkcXxEeOBqZqUlO-npA" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fF6TksXxEeOBqZqUlO-npA" key="StereotypeList" value="OptiGrade Profile::System"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fF6Tk8XxEeOBqZqUlO-npA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fF6TlMXxEeOBqZqUlO-npA" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fF6TlcXxEeOBqZqUlO-npA" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Y4PQYsXxEeOBqZqUlO-npA" type="5014">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4PQY8XxEeOBqZqUlO-npA" x="-17" y="78"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Y4PQZMXxEeOBqZqUlO-npA" type="6029">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4PQZcXxEeOBqZqUlO-npA" x="14" y="63"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Y4PQZsXxEeOBqZqUlO-npA" type="6037">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4PQZ8XxEeOBqZqUlO-npA" x="20" y="80"/>
+      </children>
+      <element xmi:type="uml:Actor" href="Optigrade.model.uml#_YzxnIMXxEeOBqZqUlO-npA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y4PQYcXxEeOBqZqUlO-npA" x="29" y="48"/>
+    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_yLy2YcWQEeO0Uf7iyNbhuw"/>
     <element xmi:type="uml:Model" href="Optigrade.model.uml#_yLxoQMWQEeO0Uf7iyNbhuw"/>
     <edges xmi:type="notation:Connector" xmi:id="_WvrBAMWnEeOo1LBePScnfA" type="4011" source="_Wr7WAMWSEeO0Uf7iyNbhuw" target="_03EPMMWjEeO0Uf7iyNbhuw" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_WvrBA8WnEeOo1LBePScnfA" type="6008">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_WvrBBMWnEeOo1LBePScnfA" x="-22" y="-26"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WvrBBMWnEeOo1LBePScnfA" x="18" y="38"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_WvrBBcWnEeOo1LBePScnfA" type="6033">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_WvrBBsWnEeOo1LBePScnfA" y="-20"/>
@@ -111,7 +131,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_Yb1A0MWnEeOo1LBePScnfA" type="4011" source="_Wr7WAMWSEeO0Uf7iyNbhuw" target="_AAbwUcWkEeO0Uf7iyNbhuw" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_Yb1A08WnEeOo1LBePScnfA" type="6008">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Yb1A1MWnEeOo1LBePScnfA" x="10" y="-20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Yb1A1MWnEeOo1LBePScnfA" x="7" y="15"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_Yb1A1cWnEeOo1LBePScnfA" type="6033">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Yb1A1sWnEeOo1LBePScnfA" y="-20"/>
@@ -124,7 +144,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_ZwLkoMWnEeOo1LBePScnfA" type="4011" source="_Wr7WAMWSEeO0Uf7iyNbhuw" target="_DRwXIcWkEeO0Uf7iyNbhuw" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_ZwLko8WnEeOo1LBePScnfA" type="6008">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZwLkpMWnEeOo1LBePScnfA" x="50" y="-59"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZwLkpMWnEeOo1LBePScnfA" x="21" y="-48"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_ZwLkpcWnEeOo1LBePScnfA" type="6033">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_ZwLkpsWnEeOo1LBePScnfA" y="-20"/>
@@ -170,7 +190,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_uSeul8WoEeOo1LBePScnfA" type="4011" source="_IDsQkMWuEeOo1LBePScnfA" target="_yBcQccWkEeO0Uf7iyNbhuw" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_uSeumsWoEeOo1LBePScnfA" type="6008">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_uSeum8WoEeOo1LBePScnfA" x="-7" y="-24"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uSeum8WoEeOo1LBePScnfA" x="4" y="18"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_uSeunMWoEeOo1LBePScnfA" type="6033">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_uSeuncWoEeOo1LBePScnfA" y="-20"/>
@@ -217,9 +237,29 @@
       <element xmi:type="uml:Extend" href="Optigrade.model.uml#_fvjHQMXBEeOo1LBePScnfA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fvs4Q8XBEeOo1LBePScnfA" points="[17, 29, -56, -89]$[75, 147, 2, 29]"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_lAsP8MXxEeOBqZqUlO-npA" type="4011" source="_03EPMMWjEeO0Uf7iyNbhuw" target="_Y4PQYMXxEeOBqZqUlO-npA" lineWidth="1">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lAsP88XxEeOBqZqUlO-npA" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lAsP9MXxEeOBqZqUlO-npA" x="-5" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lAsP9cXxEeOBqZqUlO-npA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lAsP9sXxEeOBqZqUlO-npA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_lAsP8cXxEeOBqZqUlO-npA"/>
+      <element xmi:type="uml:Association" href="Optigrade.model.uml#_lAZVAMXxEeOBqZqUlO-npA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lAsP8sXxEeOBqZqUlO-npA" points="[-16, -2, 81, 9]$[-94, -11, 3, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lA_K4MXxEeOBqZqUlO-npA" id="(0.11428571428571428,0.4666666666666667)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lA_K4cXxEeOBqZqUlO-npA" id="(0.8,0.6666666666666666)"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_dO5wcMW2EeOo1LBePScnfA" type="UseCase" name="User Management" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_kPKHIMW2EeOo1LBePScnfA" type="2015">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HWQVcMXzEeOBqZqUlO-npA" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I0IBoMXzEeOBqZqUlO-npA" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I0IBocXzEeOBqZqUlO-npA" key="StereotypeList" value="StandardProfileL2::Subsystem"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I0IBosXzEeOBqZqUlO-npA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I0IBo8XzEeOBqZqUlO-npA" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I0IBpMXzEeOBqZqUlO-npA" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_kPKHIsW2EeOo1LBePScnfA" type="5019"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_kPKHI8W2EeOo1LBePScnfA" type="7011">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oJ-98MW2EeOo1LBePScnfA" source="Stereotype_Annotation">
@@ -232,47 +272,52 @@
         <children xmi:type="notation:Shape" xmi:id="_IEpjwcW3EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_IEpjw8W3EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_IEpjwMW3EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IEpjwsW3EeOo1LBePScnfA" x="14" y="29"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IEpjwsW3EeOo1LBePScnfA" x="14" y="108"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_NQ3J8cW3EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_NQ3J88W3EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_NQ3J8MW3EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NQ3J8sW3EeOo1LBePScnfA" x="13" y="128"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NQ3J8sW3EeOo1LBePScnfA" x="13" y="207"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_eju_8MW3EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_eju_8sW3EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_ejlO8MW3EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eju_8cW3EeOo1LBePScnfA" x="159" y="190"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eju_8cW3EeOo1LBePScnfA" x="159" y="269"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_tDLsEMW3EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_tDLsEsW3EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_tDCiIMW3EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tDLsEcW3EeOo1LBePScnfA" x="5" y="269"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tDLsEcW3EeOo1LBePScnfA" x="5" y="348"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_bPlVUMW8EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_bPlVUsW8EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_bPcLYMW8EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPlVUcW8EeOo1LBePScnfA" x="177" y="81"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPlVUcW8EeOo1LBePScnfA" x="177" y="160"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_jl1OkcW8EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_jl-_kMW8EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_jl1OkMW8EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jl1OksW8EeOo1LBePScnfA" x="8" y="359"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jl1OksW8EeOo1LBePScnfA" x="8" y="438"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_kiYWYMW8EeOo1LBePScnfA" type="3009" lineWidth="1">
           <children xmi:type="notation:DecorationNode" xmi:id="_kiYWYsW8EeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_kiPMcMW8EeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kiYWYcW8EeOo1LBePScnfA" x="169" y="315"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kiYWYcW8EeOo1LBePScnfA" x="169" y="394"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_PUBeEMXDEeOo1LBePScnfA" type="3009">
           <children xmi:type="notation:DecorationNode" xmi:id="_PUBeEsXDEeOo1LBePScnfA" type="5018"/>
           <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_PT4UIMXDEeOo1LBePScnfA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PUBeEcXDEeOo1LBePScnfA" x="219" y="3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PUBeEcXDEeOo1LBePScnfA" x="219" y="82"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_kHByIMXzEeOBqZqUlO-npA" type="3009" lineWidth="1">
+          <children xmi:type="notation:DecorationNode" xmi:id="_kHByIsXzEeOBqZqUlO-npA" type="5018"/>
+          <element xmi:type="uml:UseCase" href="Optigrade.model.uml#_kGSLQMXzEeOBqZqUlO-npA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kHByIcXzEeOBqZqUlO-npA" x="12" y="11"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kPKHJMW2EeOo1LBePScnfA"/>
       </children>
       <element xmi:type="uml:Component" href="Optigrade.model.uml#_kO2lIMW2EeOo1LBePScnfA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kPKHIcW2EeOo1LBePScnfA" x="323" y="15" width="380" height="464"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kPKHIcW2EeOo1LBePScnfA" x="294" y="15" width="380" height="558"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_0igZ0MW2EeOo1LBePScnfA" type="2011" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_0igZ0sW2EeOo1LBePScnfA" type="5014">
@@ -285,7 +330,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_0igZ18W2EeOo1LBePScnfA" x="20" y="80"/>
       </children>
       <element xmi:type="uml:Actor" href="Optigrade.model.uml#_3D3SYMWtEeOo1LBePScnfA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0igZ0cW2EeOo1LBePScnfA" x="31" y="246"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0igZ0cW2EeOo1LBePScnfA" x="2" y="325"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_rgM_8MXDEeOo1LBePScnfA" type="2011" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_rgM_8sXDEeOo1LBePScnfA" type="5014">
@@ -298,7 +343,33 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rgM_98XDEeOo1LBePScnfA" x="20" y="80"/>
       </children>
       <element xmi:type="uml:Actor" href="Optigrade.model.uml#_6JIaMMWtEeOo1LBePScnfA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rgM_8cXDEeOo1LBePScnfA" x="757" y="236"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rgM_8cXDEeOo1LBePScnfA" x="757" y="315"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_80us4MXxEeOBqZqUlO-npA" type="2011" lineWidth="1">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_80us4cXxEeOBqZqUlO-npA" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_80us4sXxEeOBqZqUlO-npA" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_80us48XxEeOBqZqUlO-npA" key="StereotypeList" value="OptiGrade Profile::System"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_80us5MXxEeOBqZqUlO-npA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_80us5cXxEeOBqZqUlO-npA" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_80us5sXxEeOBqZqUlO-npA" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_80us58XxEeOBqZqUlO-npA" type="5014">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_80us6MXxEeOBqZqUlO-npA" x="-17" y="78"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_80us6cXxEeOBqZqUlO-npA" type="6029">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_80us6sXxEeOBqZqUlO-npA" x="14" y="63"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_80us68XxEeOBqZqUlO-npA" type="6037">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_80us7MXxEeOBqZqUlO-npA" x="20" y="80"/>
+      </children>
+      <element xmi:type="uml:Actor" href="Optigrade.model.uml#_YzxnIMXxEeOBqZqUlO-npA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_80us7cXxEeOBqZqUlO-npA" x="703" y="73"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_l_t8oMX0EeOBqZqUlO-npA" type="2018">
+      <children xmi:type="notation:DecorationNode" xmi:id="_l_t8o8X0EeOBqZqUlO-npA" type="5027"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_l_t8ocX0EeOBqZqUlO-npA"/>
+      <element xmi:type="uml:Comment" href="Optigrade.model.uml#_l-qzwMX0EeOBqZqUlO-npA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l_t8osX0EeOBqZqUlO-npA" x="263" y="588" width="447"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_dO5wccW2EeOo1LBePScnfA"/>
     <element xmi:type="uml:Model" href="Optigrade.model.uml#_yLxoQMWQEeO0Uf7iyNbhuw"/>
@@ -473,7 +544,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_t_Y_N8XDEeOo1LBePScnfA" type="4011" source="_rgM_8MXDEeOo1LBePScnfA" target="_PUBeEMXDEeOo1LBePScnfA" lineWidth="1">
       <children xmi:type="notation:DecorationNode" xmi:id="_t_Y_OsXDEeOo1LBePScnfA" type="6008">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_t_Y_O8XDEeOo1LBePScnfA" x="24" y="63"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_t_Y_O8XDEeOo1LBePScnfA" x="16" y="59"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_t_Y_PMXDEeOo1LBePScnfA" type="6033">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_t_Y_PcXDEeOo1LBePScnfA" y="-20"/>
@@ -482,6 +553,44 @@
       <element xmi:type="uml:Association" href="Optigrade.model.uml#_t_Y_MMXDEeOo1LBePScnfA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t_Y_OcXDEeOo1LBePScnfA" points="[-40, -10, 108, 26]$[-140, -36, 8, 0]"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t_r6IMXDEeOo1LBePScnfA" id="(0.7785714285714286,0.9666666666666667)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="__M6sR8XxEeOBqZqUlO-npA" type="4011" source="_80us4MXxEeOBqZqUlO-npA" target="_IEpjwcW3EeOo1LBePScnfA" lineWidth="1">
+      <children xmi:type="notation:DecorationNode" xmi:id="__NEdQMXxEeOBqZqUlO-npA" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__NEdQcXxEeOBqZqUlO-npA" x="-55" y="12"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__NEdQsXxEeOBqZqUlO-npA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__NEdQ8XxEeOBqZqUlO-npA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="__M6sSMXxEeOBqZqUlO-npA"/>
+      <element xmi:type="uml:Association" href="Optigrade.model.uml#__M6sQMXxEeOBqZqUlO-npA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__M6sScXxEeOBqZqUlO-npA" points="[-40, 0, 378, -69]$[-299, 0, 119, -69]$[-416, 67, 2, -2]"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__NhJMMXxEeOBqZqUlO-npA" id="(0.7357142857142858,0.03333333333333333)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_xaKcIMXzEeOBqZqUlO-npA" type="4008" source="_kHByIMXzEeOBqZqUlO-npA" target="_IEpjwcW3EeOo1LBePScnfA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xaKcJMXzEeOBqZqUlO-npA" type="6006">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xaKcJcXzEeOBqZqUlO-npA" x="-1" y="32"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xaKcJsXzEeOBqZqUlO-npA" type="6030">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xaKcJ8XzEeOBqZqUlO-npA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_xaKcIcXzEeOBqZqUlO-npA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xaKcIsXzEeOBqZqUlO-npA"/>
+      <element xmi:type="uml:Include" href="Optigrade.model.uml#_xaArIMXzEeOBqZqUlO-npA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xaKcI8XzEeOBqZqUlO-npA" points="[-1, 29, 0, -46]$[-2, 67, -1, -8]"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xaTmEMXzEeOBqZqUlO-npA" id="(0.4857142857142857,0.13333333333333333)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_0I0ax8XzEeOBqZqUlO-npA" type="4011" source="_0igZ0MW2EeOo1LBePScnfA" target="_kHByIMXzEeOBqZqUlO-npA" lineWidth="1">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0I0aysXzEeOBqZqUlO-npA" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0I0ay8XzEeOBqZqUlO-npA" x="71" y="83"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0I0azMXzEeOBqZqUlO-npA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0I0azcXzEeOBqZqUlO-npA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_0I0ayMXzEeOBqZqUlO-npA"/>
+      <element xmi:type="uml:Association" href="Optigrade.model.uml#_0I0awMXzEeOBqZqUlO-npA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0I0aycXzEeOBqZqUlO-npA" points="[2, -8, -283, 226]$[87, -234, -198, 0]$[275, -234, -10, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0JHVsMXzEeOBqZqUlO-npA" id="(0.425,0.13333333333333333)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0JHVscXzEeOBqZqUlO-npA" id="(0.07042253521126761,0.48333333333333334)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_M4ORYMXAEeOo1LBePScnfA" type="UseCase" name="User Role Hierarchy" measurementUnit="Pixel">

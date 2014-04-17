@@ -13,11 +13,7 @@
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
-      <children xsi:type="di:TabFolder">
-        <children>
-          <emfPageIdentifier href="Optigrade.model.notation#_yLy2YMWQEeO0Uf7iyNbhuw"/>
-        </children>
-      </children>
+      <children xsi:type="di:TabFolder"/>
     </windows>
   </sashModel>
 </di:SashWindowsMngr>

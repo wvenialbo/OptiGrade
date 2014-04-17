@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UCM-Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.0">
+  <Model UniqueID="4aaa7ee3-5aff-496f-966d-99eed4596ca4" Name="OptiGrade 3.0 On-line Service" ID="1" Prefix="M" Author="Waldemar Villamayor-Venialbo" Company="OptiSoft Ltd." Release="0.0.1" CreationDateValue="04/17/2014 02:33:59">
+    <Actors>
+      <Actor UniqueID="2a1f40fe-0005-4209-a084-f141e788cd06" Name="Visitor" ID="1" Prefix="A">
+        <Attributes>
+          <Description>A visitor is any unregistered user or a registered user whose account was not activated.</Description>
+          <Notes>When a visitor signs up and activates his/her account, a new user is created and assigned the role "Owner" or "Manager", respectively, according his/her account is "Individual" or "Corporate".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Goals>
+          <Goal UniqueID="37664c0c-785d-405b-9ce6-3a6d538c4827" Name="1" ID="1" Prefix="">
+            <Description>Navigate the website.</Description>
+          </Goal>
+          <Goal UniqueID="2d5a4f9a-a9bf-41b6-a4a5-1917df9836e5" Name="2" ID="2" Prefix="">
+            <Description>Sign up with the service.</Description>
+          </Goal>
+          <Goal UniqueID="b30c4b71-8de2-43dd-af00-682dca6bae1a" Name="3" ID="3" Prefix="">
+            <Description>Sign in with the server.</Description>
+          </Goal>
+          <Goal UniqueID="6637c1a8-0248-46ca-8bc7-98ddf637b17c" Name="4" ID="4" Prefix="">
+            <Description>Activate his/her account.</Description>
+          </Goal>
+        </Goals>
+      </Actor>
+    </Actors>
+    <Packages />
+    <UseCases>
+      <UseCase UniqueID="83c2c80e-6970-4c11-b7b3-df3fce5804d1" Name="Sign up" ID="1" Prefix="UC">
+        <Attributes>
+          <Description>The visitor has the ability to join the system as a user.</Description>
+          <Notes>In our initial scenarios, the relevant UI must be browser-based.</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="97962982-448d-4deb-aaf1-01c1e96e3005" Name="1" ID="1" Prefix="">
+            <Description>The visitor selects the 'Sign up' link</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="5cdc3e0a-ddf1-472b-bbf3-1f50b20578d2" Name="2" ID="2" Prefix="">
+            <Description>The visitor is shown a screen where the user can create a user name.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="12d36a2b-92fc-4051-8b64-444ce730c2f5" Name="3" ID="3" Prefix="">
+            <Description>The visitor must add his email (mandatory), password (mandatory) and location.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="0d04a179-0e8a-4abc-837b-87383076ff9e" Name="4" ID="4" Prefix="">
+            <Description>The visitor must check the acceptance of the service provider condition of terms.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="86609f8a-6828-498f-8eeb-f16d6aceffc7" Name="5" ID="5" Prefix="">
+            <Description>The system sends a confirmation email message with an activation hyperlink to the user based on the email submitted.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. User has a valid email account address.</Preconditions>
+        <Postconditions>1. User is registered.
+2. User is assigned the role 'Visitor'.</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="ce701709-7661-4a9e-9e5b-b9489dac2c99" Name="Activate account" ID="2" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="5be7f68d-9701-4f5c-99a0-33589e54ea04" Name="Sign in" ID="3" Prefix="UC">
+        <Attributes>
+          <Description>The visitor has the ability to log in to the system to be able use it.</Description>
+          <Notes>In our initial scenarios, the relevant UI may be browser-based or AIM-based.
+
+In the flow of events, the entity "system" represents a subset of components of both, the client and remote server sides.</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="b9519fcb-71f5-49fa-96cb-df7c234c77a2" Name="1" ID="1" Prefix="">
+            <Description>The visitor selects the 'Sign in' link,</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="2e259344-f506-4c40-bdbc-b6003a4ed8b0" Name="2" ID="2" Prefix="">
+            <Description>The system requests that the visitor enter his/her username and password.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="30b9e96d-1119-4556-865b-4ff3b2743e1c" Name="3" ID="3" Prefix="">
+            <Description>The visitor types in his/her username and password.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="1378e23f-aee6-406f-aa8e-08c20937d0d0" Name="4" ID="4" Prefix="">
+            <Description>The user hits the 'Log in' button.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="db77a953-be9c-4a4d-bb27-48629d1c011b" Name="5" ID="5" Prefix="">
+            <Description>The system validates the entered username and password.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="59c9e38e-2c96-471b-b0c9-88550b55a1ec" Name="5.A" ID="5" Prefix="A">
+            <Description> "Log in"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="083c7dae-3874-41b3-a7e5-a1343bab1d55" Name="5.A.1" ID="5" Prefix="A">
+            <Description>If the username/password combination do match some account, logs the visitor into the system assigning his/her current role.</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="84363eae-5e14-40b9-8718-30b6e9b26598" Name="5.B" ID="5" Prefix="B">
+            <Description>Invalid username/password</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="e86862bd-7056-4b41-ad0c-a1b92c625aa9" Name="5.B.1" ID="5" Prefix="B">
+            <Description>If the visitor enters an invalid username and/or password, the system displays an error message. The visitor can choose to either return to the beginning of the Normal Flow or cancel the sign in process, at which point the use case ends.</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>2a1f40fe-0005-4209-a084-f141e788cd06</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. The service must be up.
+2. The visitor has an active account,
+3. A current session may or may be not active.</Preconditions>
+        <Postconditions>• If the operation was successful, the user is logged into and may use the system with his/her current role.
+• If not, the system state is unchanged. Any previously active session is now closed.</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when a visitor wishes to log into the OptiGrade system.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="377d6d71-c62f-41a7-8bd5-ef83c2624a5f" Name="Log in" ID="4" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+    </UseCases>
+    <Requirements />
+    <Attributes>
+      <Description>OptiGrade 3.0 is an on-line service for remote evaluation of multi-choice exams using desktop optical mark recognition technology with a Web application front-end.</Description>
+      <Notes>Copyright © 1997-2014, OptiSoft Ltd. All rights reserved.</Notes>
+      <RelatedDocuments />
+    </Attributes>
+    <Glossary />
+    <Stakeholders />
+  </Model>
+</UCM-Document>
