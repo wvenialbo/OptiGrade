@@ -1,4 +1,15 @@
-Tentative UUCC
+Project Information
+===================
+Project name        : OptiGrade 3.0 On-line Service
+Project description : OptiGrade 3.0 is an on-line service for remote evaluation of multi-choice exams using desktop optical mark recognition technology with a Web application front-end.
+Author              : Waldemar Villamayor-Venialbo <wvenialbo@gmail.com>
+Copyright notice    : Copyright © 1997‒2014, OptiSoft Ltd. All rights reserved.
+
+
+Modelling Notes
+===============
+
+1. A list of tentative use cases and prospective user roles.
 
     Use case                       Owner     Admin   Operator     User
 ----------------------------------------------------------------------------------------------------
@@ -25,3 +36,10 @@ Tentative UUCC
 17. R user                         *         *       *
 18. U user                         *         *       *
 19. D user                         *         *
+----------------------------------------------------------------------------------------------------
+Correspondent EN --> ES command name terminology:
+- erase borrar
+  delete suprimir
+  remove remover quitar eliminar (eliminate)
+  anular cancelar
+----------------------------------------------------------------------------------------------------

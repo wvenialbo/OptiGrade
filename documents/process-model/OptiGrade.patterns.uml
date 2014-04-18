@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_37qs8MaFEeOvItrMDCCtjw" name="OptiGrade Patterns">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TfE-oMaGEeOvItrMDCCtjw" name="Create &lt;entity>" useCase="_d0-bcMaGEeOvItrMDCCtjw" subject="_VULFwMaLEeOvItrMDCCtjw">
+    <include xmi:type="uml:Include" xmi:id="_4VSRYMaGEeOvItrMDCCtjw" addition="_d0-bcMaGEeOvItrMDCCtjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zIqmEMaHEeOvItrMDCCtjw" name="View &lt;entity>" useCase="_a6tpwMaGEeOvItrMDCCtjw">
+    <extend xmi:type="uml:Extend" xmi:id="_bSodsMaKEeOvItrMDCCtjw" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_cso9kcaKEeOvItrMDCCtjw" name="View point"/>
+    <include xmi:type="uml:Include" xmi:id="_4yxpMMaHEeOvItrMDCCtjw" addition="_a6tpwMaGEeOvItrMDCCtjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_a6tpwMaGEeOvItrMDCCtjw" name="Retrieve &lt;entity>" subject="_zIqmEMaHEeOvItrMDCCtjw _cpGeMMaGEeOvItrMDCCtjw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cpGeMMaGEeOvItrMDCCtjw" name="Update &lt;entity>" useCase="_a6tpwMaGEeOvItrMDCCtjw _d0-bcMaGEeOvItrMDCCtjw">
+    <extend xmi:type="uml:Extend" xmi:id="_2QaSwMaKEeOvItrMDCCtjw" name="" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
+    <include xmi:type="uml:Include" xmi:id="_9OMEkMaHEeOvItrMDCCtjw" addition="_a6tpwMaGEeOvItrMDCCtjw"/>
+    <include xmi:type="uml:Include" xmi:id="_JBXXsMaIEeOvItrMDCCtjw" addition="_d0-bcMaGEeOvItrMDCCtjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_dNsZAMaGEeOvItrMDCCtjw" name="Delete &lt;entity>">
+    <extend xmi:type="uml:Extend" xmi:id="_csfzoMaKEeOvItrMDCCtjw" extendedCase="_zIqmEMaHEeOvItrMDCCtjw" extensionLocation="_cso9kcaKEeOvItrMDCCtjw"/>
+    <extend xmi:type="uml:Extend" xmi:id="_r0254MaKEeOvItrMDCCtjw" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Exnu4MaKEeOvItrMDCCtjw" name="View &lt;list>" useCase="_Bu5vUMaLEeOvItrMDCCtjw" subject="_VULFwMaLEeOvItrMDCCtjw">
+    <extend xmi:type="uml:Extend" xmi:id="_gVrZcMaNEeOvItrMDCCtjw" name="" extendedCase="_bNn6gMaNEeOvItrMDCCtjw" extensionLocation="_gV0jYMaNEeOvItrMDCCtjw"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_bSyOscaKEeOvItrMDCCtjw" name="List point"/>
+    <include xmi:type="uml:Include" xmi:id="_Mb-LcMaKEeOvItrMDCCtjw" addition="_Bu5vUMaLEeOvItrMDCCtjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Bu5vUMaLEeOvItrMDCCtjw" name="Retrieve &lt;list>" subject="_Exnu4MaKEeOvItrMDCCtjw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_d0-bcMaGEeOvItrMDCCtjw" name="Configure &lt;entity>" subject="_TfE-oMaGEeOvItrMDCCtjw _cpGeMMaGEeOvItrMDCCtjw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bNn6gMaNEeOvItrMDCCtjw" name="Search &lt;entity>" subject="_VULFwMaLEeOvItrMDCCtjw">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gV0jYMaNEeOvItrMDCCtjw" name="Search point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VULFwMaLEeOvItrMDCCtjw" name="&lt;User>" useCase="_TfE-oMaGEeOvItrMDCCtjw _Exnu4MaKEeOvItrMDCCtjw _bNn6gMaNEeOvItrMDCCtjw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YqaBwMaLEeOvItrMDCCtjw" name="A &lt;user> create &lt;entity>" memberEnd="_YqaBwcaLEeOvItrMDCCtjw _YqaBxMaLEeOvItrMDCCtjw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YqaBwcaLEeOvItrMDCCtjw" name="&lt;user>" type="_VULFwMaLEeOvItrMDCCtjw" association="_YqaBwMaLEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqaBwsaLEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqaBw8aLEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YqaBxMaLEeOvItrMDCCtjw" name="create &lt;entity>" type="_TfE-oMaGEeOvItrMDCCtjw" association="_YqaBwMaLEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqaBxcaLEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqaBxsaLEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eJguwMaLEeOvItrMDCCtjw" name="A &lt;user> view &lt;list>" memberEnd="_eJguwcaLEeOvItrMDCCtjw _eJguxMaLEeOvItrMDCCtjw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eJguwcaLEeOvItrMDCCtjw" name="&lt;user>" type="_VULFwMaLEeOvItrMDCCtjw" association="_eJguwMaLEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eJguwsaLEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eJguw8aLEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eJguxMaLEeOvItrMDCCtjw" name="view &lt;list>" type="_Exnu4MaKEeOvItrMDCCtjw" association="_eJguwMaLEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eJguxcaLEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eJguxsaLEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iT1IMMaNEeOvItrMDCCtjw" name="A &lt;user> search &lt;entity>" memberEnd="_iT1IMcaNEeOvItrMDCCtjw _iT1INMaNEeOvItrMDCCtjw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iT1IMcaNEeOvItrMDCCtjw" name="&lt;user>" type="_VULFwMaLEeOvItrMDCCtjw" association="_iT1IMMaNEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iT1IMsaNEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iT1IM8aNEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iT1INMaNEeOvItrMDCCtjw" name="search &lt;entity>" type="_bNn6gMaNEeOvItrMDCCtjw" association="_iT1IMMaNEeOvItrMDCCtjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iT1INcaNEeOvItrMDCCtjw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iT1INsaNEeOvItrMDCCtjw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_NfPjIMaGEeOvItrMDCCtjw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NfsPEMaGEeOvItrMDCCtjw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L2#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/StandardL2.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
