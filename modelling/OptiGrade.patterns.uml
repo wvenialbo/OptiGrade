@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_37qs8MaFEeOvItrMDCCtjw" name="OptiGrade Patterns">
   <packagedElement xmi:type="uml:UseCase" xmi:id="_TfE-oMaGEeOvItrMDCCtjw" name="Create &lt;entity>" useCase="_d0-bcMaGEeOvItrMDCCtjw" subject="_VULFwMaLEeOvItrMDCCtjw">
+    <extend xmi:type="uml:Extend" xmi:id="_qJxwgMcsEeOTW6QcvYQVog" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
     <include xmi:type="uml:Include" xmi:id="_4VSRYMaGEeOvItrMDCCtjw" addition="_d0-bcMaGEeOvItrMDCCtjw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_zIqmEMaHEeOvItrMDCCtjw" name="View &lt;entity>" useCase="_a6tpwMaGEeOvItrMDCCtjw">
@@ -11,6 +12,7 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_a6tpwMaGEeOvItrMDCCtjw" name="Retrieve &lt;entity>" subject="_zIqmEMaHEeOvItrMDCCtjw _cpGeMMaGEeOvItrMDCCtjw"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_cpGeMMaGEeOvItrMDCCtjw" name="Update &lt;entity>" useCase="_a6tpwMaGEeOvItrMDCCtjw _d0-bcMaGEeOvItrMDCCtjw">
     <extend xmi:type="uml:Extend" xmi:id="_2QaSwMaKEeOvItrMDCCtjw" name="" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
+    <extend xmi:type="uml:Extend" xmi:id="_CHKMIMcsEeOTW6QcvYQVog" extendedCase="_zIqmEMaHEeOvItrMDCCtjw" extensionLocation="_cso9kcaKEeOvItrMDCCtjw"/>
     <include xmi:type="uml:Include" xmi:id="_9OMEkMaHEeOvItrMDCCtjw" addition="_a6tpwMaGEeOvItrMDCCtjw"/>
     <include xmi:type="uml:Include" xmi:id="_JBXXsMaIEeOvItrMDCCtjw" addition="_d0-bcMaGEeOvItrMDCCtjw"/>
   </packagedElement>
@@ -19,7 +21,6 @@
     <extend xmi:type="uml:Extend" xmi:id="_r0254MaKEeOvItrMDCCtjw" extendedCase="_Exnu4MaKEeOvItrMDCCtjw" extensionLocation="_bSyOscaKEeOvItrMDCCtjw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_Exnu4MaKEeOvItrMDCCtjw" name="View &lt;list>" useCase="_Bu5vUMaLEeOvItrMDCCtjw" subject="_VULFwMaLEeOvItrMDCCtjw">
-    <extend xmi:type="uml:Extend" xmi:id="_gVrZcMaNEeOvItrMDCCtjw" name="" extendedCase="_bNn6gMaNEeOvItrMDCCtjw" extensionLocation="_gV0jYMaNEeOvItrMDCCtjw"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_bSyOscaKEeOvItrMDCCtjw" name="List point"/>
     <include xmi:type="uml:Include" xmi:id="_Mb-LcMaKEeOvItrMDCCtjw" addition="_Bu5vUMaLEeOvItrMDCCtjw"/>
   </packagedElement>
@@ -27,6 +28,7 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_d0-bcMaGEeOvItrMDCCtjw" name="Configure &lt;entity>" subject="_TfE-oMaGEeOvItrMDCCtjw _cpGeMMaGEeOvItrMDCCtjw"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_bNn6gMaNEeOvItrMDCCtjw" name="Search &lt;entity>" subject="_VULFwMaLEeOvItrMDCCtjw">
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gV0jYMaNEeOvItrMDCCtjw" name="Search point"/>
+    <include xmi:type="uml:Include" xmi:id="_mLSiEMd2EeOhb8l-Wgo88A" addition="_Exnu4MaKEeOvItrMDCCtjw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_VULFwMaLEeOvItrMDCCtjw" name="&lt;User>" useCase="_TfE-oMaGEeOvItrMDCCtjw _Exnu4MaKEeOvItrMDCCtjw _bNn6gMaNEeOvItrMDCCtjw"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_YqaBwMaLEeOvItrMDCCtjw" name="A &lt;user> create &lt;entity>" memberEnd="_YqaBwcaLEeOvItrMDCCtjw _YqaBxMaLEeOvItrMDCCtjw">

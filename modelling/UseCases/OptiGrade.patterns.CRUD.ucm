@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UCM-Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.0">
+  <Model UniqueID="f81616ed-9e4a-4436-a218-4f2d89ffea6a" Name="OptiGrade CRUD Pattern and Conventions" ID="1" Prefix="M" Author="Waldemar Villamayor-Venialbo" Company="OptiSoft Ltd." Release="0.0.1" CreationDateValue="04/17/2014 15:54:05">
+    <Actors>
+      <Actor UniqueID="952bdccd-e0da-47a0-b78b-a910e05f47c8" Name="&lt;User&gt;" ID="1" Prefix="A">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Goals />
+      </Actor>
+    </Actors>
+    <Packages />
+    <UseCases>
+      <UseCase UniqueID="bdfff909-842d-4f4e-b60c-3013139c04bc" Name="Create &lt;entity&gt;" ID="1" Prefix="UC">
+        <Attributes>
+          <Description>The user can instance an entity with its default set of properties and attributes, change its configuration, and create and insert a new object of that instance to the collection of entities.</Description>
+          <Notes>This use case depicts a common pattern for the creation of a new entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It includes the following use cases: "Configure &lt;entity&gt;".
+It extends the following use cases: "View &lt;list&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="30d13dd1-eb5c-459b-9cc4-f71d9f5df82e" Name="1" ID="1" Prefix="">
+            <Description>The system instances an &lt;entity&gt; with the default configuration.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="735d6704-dd41-449a-9466-ee3c11ebfca1" Name="2" ID="2" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "Configure &lt;entity&gt;" — The system launches the configuration user interface for this &lt;entity&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="36f78460-c64e-4f98-8b90-4c9c3c138755" Name="3" ID="3" Prefix="">
+            <Description>The system returns from the configuration interface / The previous attempt failed:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="4f67f3c0-23a8-49c4-95fb-5489aeb3cd86" Name="3.A" ID="3" Prefix="A">
+            <Description>If the user confirmed the operation, the system creates a new &lt;entity&gt; object.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="dc8477d7-1333-4b47-84c9-376f92c6964e" Name="3.B" ID="3" Prefix="B">
+            <Description>If the user cancelled the operation, this use case terminates.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="44de979a-6731-4969-97b7-19e6eafc3ecb" Name="4" ID="4" Prefix="">
+            <Description>The system inserts the new &lt;entity&gt; object into its &lt;collection of entities&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="9aec8970-cc63-472d-8fea-df1f75aafbd5" Name="5" ID="5" Prefix="">
+            <Description>The system signals the task is complete.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="108507e9-75b3-49a5-a098-d5efcd61d02b" Name="5.A" ID="5" Prefix="A">
+            <Description>If the operation was successful, the system notifies the user.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="53c6afb0-ad2c-4ef3-aaf6-14d0dfae5f48" Name="5.B" ID="5" Prefix="B">
+            <Description>If the operation failed, the system notifies the user about the error and asks the user to try again or to abort the operation. The flow continues in "Step 3".</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. The user has the required permissions to create entities.</Preconditions>
+        <Postconditions>• If the operation was successful, a new entity has been added to the system's collection of entities.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to create a new entity into the system. E.g., the user issues a &lt;CREATE&gt; command.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="c302b9e3-5083-4712-858e-705b3e406ce6" Name="Configure &lt;entity&gt;" ID="2" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to change a provided set of configuration values for an entity.</Description>
+          <Notes>This use case depicts a common pattern for changing the configuration of an entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It is included by the following use cases: "Create &lt;entity&gt;", "Update &lt;entity&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="b1aed57b-5260-4e29-bea2-7cc12451a86f" Name="1" ID="1" Prefix="">
+            <Description>The system instances and shows a user interface initialized with a provided set of &lt;entity&gt; configuration initial values.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="79719601-5d70-4f83-997b-9820be2f08b1" Name="2" ID="2" Prefix="">
+            <Description>The user changes property values, assign resources, and add or remove elements to the configuration, as desired.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="1aa2d49c-eb3d-4af1-8847-2800a4495d03" Name="3" ID="3" Prefix="">
+            <Description>The user completes the configuration.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="66c91640-653a-479f-856d-17d7606d9670" Name="3.A" ID="3" Prefix="A">
+            <Description>If the user issues a &lt;CONFIRM&gt; command, the system validates the user's inputs.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="c4d69e93-a141-4cee-a596-51d2b158501b" Name="3.B" ID="3" Prefix="B">
+            <Description>If the user issues a &lt;CANCEL&gt; command, the system left the initial set of configuration values unchanged and this use case ends.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="d73b58ab-9be3-4456-871f-105e0be89225" Name="4" ID="4" Prefix="">
+            <Description>The system completes the validation.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="bd9ad6f7-e495-4a0d-bc1a-279d0fb3a05e" Name="4.A" ID="4" Prefix="A">
+            <Description>If the user entered valid data, overwrite the initial set of configuration values with new values.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="a2f5c948-9101-4cba-88c3-852a334ffa36" Name="4.B" ID="4" Prefix="B">
+            <Description>If there are invalid data, the system shows a error message signalling which values are not accepted, and the flow continues in "Step 2".</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. An initial set of entity's configuration values is available.</Preconditions>
+        <Postconditions>• If the operation was successful, a new set of configuration values be available.
+• If not, the initial set of configuration values is unchanged.
+• The system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>Internal</EventType>
+          <Description>This use case starts when dependent use cases want to modify an entity's configuration.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="aff0268a-2706-4104-acbd-cef1cc15f197" Name="View &lt;entity&gt;" ID="3" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to visualize the information of an entity.</Description>
+          <Notes>This use case depicts a common pattern to visualize the information of an entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It includes the following use cases: "Retrieve &lt;entity&gt;".
+It extends the following use cases: "View &lt;list&gt;".
+It is extended by the following use cases: "Delete &lt;entity&gt;", "Update &lt;entity&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="de381cf0-3f4b-476a-9730-3b55ba9499b6" Name="1" ID="1" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "Retrieve &lt;entity&gt;" — The system performs a retrieval operation on the given &lt;entity&gt; ID.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="ca6e4b56-43f2-4711-b404-dc0046e1751b" Name="2" ID="2" Prefix="">
+            <Description>The system returns from the retrieval operation:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="5b942d4b-8e4f-41aa-882e-994895b46056" Name="2.A" ID="2" Prefix="A">
+            <Description>If an &lt;entity&gt; was retrieved, the system sets up a user interface visualizing the &lt;entity&gt; information.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="a0747a84-e3ad-4dfc-b32a-5ed55b3a7358" Name="2.B" ID="2" Prefix="B">
+            <Description>If no &lt;entity&gt; was retrieved, this use case terminates.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="df17ea2f-88fe-4c3b-8b5a-e5a572463562" Name="3" ID="3" Prefix="">
+            <Description>The user chooses an action or leave the user interface, in which point this use case ends.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="83cd1ae5-2650-4066-9f31-3415415c164f" Name="3.A" ID="3" Prefix="A">
+            <Description>If the user issues an &lt;UPDATE&gt; command:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="cd646936-f70b-4606-a145-bc9b5e21ad1f" Name="3.A.1" ID="3" Prefix="A">
+            <Description>&lt;&lt;use&gt;&gt; "Update &lt;entity&gt;" — The system launches the information update interface.</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="202c756d-5d28-42c1-aca1-9566e1d188e8" Name="3.A.2" ID="3" Prefix="A">
+            <Description>The system returns from the previous operation and updates the information viewer interface accordingly. The flow continues in "Step 1".</Description>
+            <ChildID>2</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="7a4e84d4-d9db-4883-91c7-cfa5ce221323" Name="3.B" ID="3" Prefix="B">
+            <Description>If the user issues a &lt;DELETE&gt; command:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="e87b0110-18ee-431f-a571-244868cf53f7" Name="3.B.1" ID="3" Prefix="B">
+            <Description>&lt;&lt;use&gt;&gt; "Delete &lt;entity&gt;" — The system deletes the current &lt;entity&gt;.</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="35de9ff8-3c87-4757-af73-13919d83b953" Name="3.B.2" ID="3" Prefix="B">
+            <Description>The system returns from the previous operation and close the information viewer interface.</Description>
+            <ChildID>2</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. An entity's ID is available.
+2. The user has the required permissions to retrieve and view information about entities.</Preconditions>
+        <Postconditions>• If the operation was successful, information for the entity with the given ID is visualized.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to display entity information. E.g., the user issues a &lt;VIEW&gt; command.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="a72de128-a0e0-4f1f-b751-9f1a4fb5d2c8" Name="Retrieve &lt;entity&gt;" ID="4" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to retrieve the information for an entity.</Description>
+          <Notes>This use case depicts a common pattern to retrieve information of an entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It is included by the following use cases: "Update &lt;entity&gt;", "View &lt;entity&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="91dfc425-0d3d-4c68-8382-427197a04e30" Name="1" ID="1" Prefix="">
+            <Description>The system tries to retrieve an &lt;entity&gt; with the given ID from its &lt;collection of entities&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="fe696802-5ef4-403b-99f0-57a879dd211d" Name="1.A" ID="1" Prefix="A">
+            <Description>If an &lt;entity&gt; was found, the system instances an &lt;entity&gt; object with the retrieved data.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="3619cc0c-b34d-4832-954d-51001146d26b" Name="1.B" ID="1" Prefix="B">
+            <Description>If the operation fails, e.g., no &lt;entity&gt; was found with the given ID or any database error, the system notifies the user about the error.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. An entity's ID is available.
+2. The user has the required permissions to retrieve information about entities.</Preconditions>
+        <Postconditions>• If the operation was successful, an entity for the given entity's ID is returned.
+• If not, a null entity is returned.
+• The system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>Internal</EventType>
+          <Description>This use case starts when dependent use cases want to retrieve entity information.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="405d117d-10f5-47e1-adb8-1e3b02da34d5" Name="Update &lt;entity&gt;" ID="5" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to modify the set of configuration values of an existing entity.</Description>
+          <Notes>This use case depicts a common pattern for updating the information of an entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It includes the following use cases: "Configure &lt;entity&gt;", "Retrieve &lt;entity&gt;".
+It extends the following use cases: "View &lt;entity&gt;", "View &lt;list&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="f49bf35b-7ce1-4010-8a15-f929c932b4ec" Name="1" ID="1" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "Retrieve &lt;entity&gt;" — The system performs a retrieval operation on the given &lt;entity&gt; ID.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="94df0757-a536-477d-b553-7cd069832930" Name="2" ID="2" Prefix="">
+            <Description>The system returns from the retrieval operation:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="64723e58-a7ce-4507-8a34-9539ee643d88" Name="2.A" ID="2" Prefix="A">
+            <Description>If an &lt;entity&gt; was retrieved, the system prepares its information for modification.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="1a8b41c6-d94c-4ab8-9dfb-fc34e5f6ddea" Name="2.B" ID="2" Prefix="B">
+            <Description>If no &lt;entity&gt; was retrieved, this use case terminates.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="6e6d4d6e-9aee-4edc-a7a1-9f45f5664362" Name="3" ID="3" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "Configure &lt;entity&gt;" — The system launches the configuration user interface for the retrieved &lt;entity&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="1099acb1-8d05-4c0e-a707-881df2e46989" Name="4" ID="4" Prefix="">
+            <Description>The system returns from the configuration interface / The previous attempt failed:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="0c61aa71-6397-49df-9955-1f34e5112130" Name="4.A" ID="4" Prefix="A">
+            <Description>If the user confirmed the operation, the system prepares the &lt;entity&gt; for updating.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="9570496e-89b0-46d7-9b73-0c78366e2928" Name="4.B" ID="4" Prefix="B">
+            <Description>If the user cancelled the operation, this use case terminates.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="fa631bd8-5aa1-4dd1-99c9-8ac02c75357b" Name="5" ID="5" Prefix="">
+            <Description>The system saves the updated &lt;entity&gt; into its &lt;collection of entities&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="280a9020-e33c-4c4b-a526-c392dd175cd7" Name="6" ID="6" Prefix="">
+            <Description>The system signals the task is complete.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="6575b3de-383f-4de3-a277-5e9f0e2f5db9" Name="6.A" ID="6" Prefix="A">
+            <Description>If the operation was successful, the system notifies the user.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="ce2882ce-9f10-46a8-a117-97ab76471e23" Name="6.B" ID="6" Prefix="B">
+            <Description>If the operation failed, the system notifies the user about the error and asks the user to try again or to abort the operation. The flow continues in "Step 4".</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. An entity's ID is available.
+2. The user has the required permissions to update entities.</Preconditions>
+        <Postconditions>• If the operation was successful, the entity's information for the given entity's ID is updated.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to update an entity's information. E.g., the user issues a &lt;UPDATE&gt; command.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="4e631fd4-36de-4ce4-a0fe-6e48298e80f8" Name="Delete &lt;entity&gt;" ID="6" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to delete an entity from the collection of entities.</Description>
+          <Notes>This use case depicts a common pattern for updating the information of an entity. Specific kind of entities may require procedures which are not contemplated here.
+
+It extends the following use cases: "View &lt;entity&gt;", "View &lt;list&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="b7b50937-2ec4-4cc4-af05-00fe03badbbd" Name="1" ID="1" Prefix="">
+            <Description>The system tries to delete an &lt;entity&gt; with the given ID from its &lt;collection of entities&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="3dc28878-aea0-4c20-b93c-bf4dc823adea" Name="1.A" ID="1" Prefix="A">
+            <Description>If the operation was successful, the system notifies the user, at which point this use case ends.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="ce55a3ff-411e-4b29-98e2-607bfcce3da9" Name="1.B" ID="1" Prefix="B">
+            <Description>If the operation failed, the system notifies the user about the error.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="79ff230b-11dc-45fc-8f55-e9f6927b9ad7" Name="2" ID="2" Prefix="">
+            <Description>The system asks the user to try again or to abort the operation.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="61a98280-8dbd-4013-afbf-1e54f898a542" Name="2.A" ID="2" Prefix="A">
+            <Description>If the user chooses to try again, the flow continues in "Step 1".</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="60c1f84b-9428-4c70-80a0-fa125d184b72" Name="2.B" ID="2" Prefix="B">
+            <Description>If the user chooses to abort, this use case terminates.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. An entity's ID is available.
+2. The user has the required permissions to delete entities.</Preconditions>
+        <Postconditions>• If the operation was successful, the entity with the given ID has been removed from the system's collection of entities.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to delete an entity from the system. E.g., the user issues a &lt;DELETE&gt; command.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="b0745721-28cd-46ec-84ff-5d2b3b4eaa08" Name="View &lt;list&gt;" ID="7" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to visualize a list of entities given a definition of a subset of entities or search criteria. If neither a subset definition nor search criteria is provided, the default subset definition is the system's entire collection of entities.</Description>
+          <Notes>This use case depicts a common pattern to visualize a list of entities. Specific kind of entities may require procedures which are not contemplated here.
+
+It includes the following use cases: "Retrieve &lt;list&gt;".
+It is included by the following use cases: "Search &lt;entity&gt;".
+It is extended by the following use cases: "Create &lt;entity&gt;", "Delete &lt;entity&gt;", "Update &lt;entity&gt;", "View &lt;entity&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="b5ac4566-2546-4690-8eb5-76d8bb94c261" Name="1" ID="1" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "Retrieve &lt;list&gt;" — The system performs a retrieval operation on a given search criteria or subset definition.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="200b7368-303c-4fc5-9d11-a0c687e1c2c3" Name="2" ID="2" Prefix="">
+            <Description>The system returns from the retrieval operation:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="aa6fe9c0-241b-4cd6-b8c3-935b6aef90c1" Name="2.A" ID="2" Prefix="A">
+            <Description>If a non-empty &lt;set of entities&gt; was retrieved, the system sets up a user interface visualizing a list with the items in the set.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="bfb00668-6655-4b72-8754-6efa7e82ce39" Name="2.B" ID="2" Prefix="B">
+            <Description>If an empty &lt;set of entities&gt; was retrieved, the system displays an empty list and a message informing the user that no entity meeting the requirements was found.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="dc51ba83-b627-45de-841f-a57fcfb2b23f" Name="3" ID="3" Prefix="">
+            <Description>The user chooses an action or leave the user interface, in which point this use case ends.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="402b58e6-15db-4301-ba71-313bb8ec056a" Name="3.A" ID="3" Prefix="A">
+            <Description>If the user issues a &lt;VIEW&gt; command on a specific item from the list:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="9e0b9a7f-f84a-4337-9254-9a7ca9b7f29f" Name="3.A.1" ID="3" Prefix="A">
+            <Description>&lt;&lt;use&gt;&gt; "View &lt;entity&gt;" — The system launches the &lt;entity&gt; detail viewer interface.</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="ff42b8e7-7d39-45cd-a505-d8e0c4cb1517" Name="3.A.2" ID="3" Prefix="A">
+            <Description>The system returns from the previous operation. The flow continues in "Step 3".</Description>
+            <ChildID>2</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="3bbbea83-75a5-44a2-8474-1a1a0f7ec95b" Name="3.B" ID="3" Prefix="B">
+            <Description>If the user issues an &lt;UPDATE&gt; command on a specific item from the list:
+&lt;&lt;use&gt;&gt; "Update &lt;entity&gt;" — The system launches the information update interface.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="024ed807-5431-4faf-9c6d-a23042123596" Name="3.C" ID="3" Prefix="C">
+            <Description>If the user issues a &lt;DELETE&gt; command on a specific item from the list:
+&lt;&lt;use&gt;&gt; "Delete &lt;entity&gt;" — The system deletes the current &lt;entity&gt;.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="24b1af84-d715-471f-8934-0f14d2be0018" Name="3.D" ID="3" Prefix="D">
+            <Description>If the user issues a &lt;CREATE&gt; command:
+&lt;&lt;use&gt;&gt; "Create &lt;entity&gt;" — The system launches the &lt;entity&gt; creation interface.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="8291df40-9167-4a29-86f8-32b9cf7bace5" Name="4" ID="4" Prefix="">
+            <Description>The system returns from the previous operation and updates the list interface accordingly. The flow continues in "Step 1".</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. The definition of a subset of entities or some search criteria is available.
+2. The user has the required permissions to retrieve and view information about entities.</Preconditions>
+        <Postconditions>• If the operation was successful, a list of entities is displayed.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to display a list of entities. E.g., the user issues a &lt;LIST&gt; command.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="e1954724-8e8b-4229-a2d2-d1834f76d97a" Name="Retrieve &lt;list&gt;" ID="8" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to retrieve information of a subset of entities.</Description>
+          <Notes>This use case depicts a common pattern to retrieve information for of a subset of entities. Specific kind of entities may require procedures which are not contemplated here.
+
+It is included by the following use cases: "View &lt;list&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="e7914517-5222-4f91-9293-7c92c83b0b1a" Name="1" ID="1" Prefix="">
+            <Description>The system tries to retrieve a subset &lt;entity&gt; items from its &lt;collection of entities&gt;, given a subset definition or some search criteria.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="b223b4c7-9812-4c44-9485-76b5ca395c35" Name="1.A" ID="1" Prefix="A">
+            <Description>If successful, the system instance a set of &lt;entity&gt; objects with the retrieved data. If no &lt;entity&gt; meets the requirement, an empty set is retrieved and it is not considered an error.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="40d17275-2330-4f8f-b9ed-26141dcce747" Name="1.B" ID="1" Prefix="B">
+            <Description>If the operation fails, i.e., there was a data transaction error, the system notifies the user about the error.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. The definition of a subset of entities or some search criteria is available.
+2. The user has the required permissions to retrieve information about entities.</Preconditions>
+        <Postconditions>• If the operation was successful, a set of entities is returned.
+• If not, a null entity is returned.
+• The system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>Internal</EventType>
+          <Description>This use case starts when dependent use cases want to retrieve a set of entities.</Description>
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="65243b71-c46c-4387-b130-27c8cee9d3f6" Name="Search &lt;entity&gt;" ID="9" Prefix="UC">
+        <Attributes>
+          <Description>The user is able to visualize a list of entities that meets some search criteria.</Description>
+          <Notes>This use case depicts a common pattern to visualize a list of entities that meets some search criteria. Specific kind of entities may require procedures which are not contemplated here.
+
+It includes the following use cases: "Retrieve &lt;list&gt;".
+It extends the following use cases: "Search &lt;entity&gt;".
+It is extended by the following use cases: "Create &lt;entity&gt;", "Delete &lt;entity&gt;", "Update &lt;entity&gt;", "View &lt;entity&gt;".</Notes>
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="dc3746bc-c0f2-414d-8cfa-e7ca19017c6d" Name="1" ID="1" Prefix="">
+            <Description>The user establishes the filter keywords in the text box, and sets up the search boundaries.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="c5ae1bf1-c9a1-4813-88d0-c408a5bcb11c" Name="2" ID="2" Prefix="">
+            <Description>The user issues a &lt;SEARCH&gt; command.</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="99aacdcf-2181-4d5c-982d-ae9173aee7d4" Name="3" ID="3" Prefix="">
+            <Description>The system performs the search:</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="f3766ea1-288d-41de-99ce-46f3fa2ff049" Name="3.1" ID="3" Prefix="">
+            <Description>The system sets up the search criteria.</Description>
+            <ChildID>1</ChildID>
+            <Type>Child</Type>
+          </Step>
+          <Step UniqueID="77ac369e-79d5-4c24-8944-498af75b6710" Name="3.2" ID="3" Prefix="">
+            <Description>&lt;&lt;include&gt;&gt; "View &lt;list&gt;" — The control is transferred to the list viewer interface with the given search criteria.</Description>
+            <ChildID>2</ChildID>
+            <Type>Child</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>952bdccd-e0da-47a0-b78b-a910e05f47c8</ActorUniqueID>
+            <IsPrimary>true</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>1. The definition of some search criteria is available.
+2. The user has the required permissions to retrieve and view information about entities.</Preconditions>
+        <Postconditions>• If the operation was successful, a list of entities that meets the search criteria is displayed.
+• If not, the system state is unchanged.</Postconditions>
+        <Release>Pattern specification</Release>
+        <AssignedTo>Designer</AssignedTo>
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Deferred</Implementation>
+        <Level>Summary</Level>
+        <Status>Completed</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description>This use case starts when the user wishes to display a list of entities that follow some search criteria. E.g., the user issues a &lt;SEARCH&gt; command from the "Advanced Search" user interface or from the "Quick Search" box, which is present in any interface of the system.</Description>
+        </Trigger>
+      </UseCase>
+    </UseCases>
+    <Requirements />
+    <Attributes>
+      <Description>Establish general patterns for entities supporting CRUD (Create, Retrieve, Update, and Delete) operations use cases and guidelines on how to name each use case.</Description>
+      <Notes>Most entities supporting CRUD operations will have use cases that follow the described patterns, provided the actors have the corresponding access privileges. Strong recommendation is made to follow the proposed use case naming conventions.</Notes>
+      <RelatedDocuments />
+    </Attributes>
+    <Glossary>
+      <GlossaryItem UniqueID="e10d6ba1-8687-445f-a973-7977406a5bf9" Name="Attribute" ID="7" Prefix="G">
+        <Description>An attribute is a characteristic that is non inherent to an entity, the entity can exists by itself without the attribute. An attribute can be added or removed from the entity. An attribute also may stand alone.</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="fdb4d332-0c3f-48f3-9d18-b99684c9b9bd" Name="Create" ID="1" Prefix="G">
+        <Description>A create (C) operation is the addition of a new entity into the system's collection of such entities. It requires writing access to the system and implies the assignment of a default set of properties, attributes, resources, and elements. The state of the system is changed after a successful creation. Usual command terminology: Create [new] &lt;entity&gt;, and Add [new] &lt;entity&gt;.</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="19b850ed-e522-40cc-b788-6e842d72ad82" Name="CRUD" ID="2" Prefix="G">
+        <Description>The acronym stands for the set of create (C), retrieve (R), update (U), and delete (D) operations. Similar acronyms may be used for a subset of these operations, e.g., CRU, CRD, CR, etc.</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="9f30bbff-0b43-4794-b0fc-523659044f43" Name="Delete" ID="5" Prefix="G">
+        <Description>A delete (D) operation is the elimination of an existing entity from the system's collection of such entities. It requires writing access to the system. The state of the system is changed after a successful deletion. Usual command terminology: Delete &lt;entity&gt;, Remove &lt;entity&gt;, and Erase &lt;entity&gt;.
+</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="6a1b9940-5b43-40a0-b4ac-91e77928497b" Name="Insert" ID="8" Prefix="G">
+        <Description>An insert operation is a variation of the create operation (see Create). In a sequence of entities, it has the semantic meaning of placing a new entity between two existing entities. In general, this operation is extended by the create operation. The state of the system is changed after a successful insertion. Usual command terminology: Insert [new] &lt;entity&gt;.</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="096febdd-1281-4e00-8de5-1e436ddf9d81" Name="Property" ID="6" Prefix="G">
+        <Description>A property is an inherent characteristic of an entity; the entity cannot exist by itself without the property. A property cannot be added nor removed from the entity. A property does not stand alone since it is not meaningful outside the entity context.
+</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="e4eceb7c-f47a-41d1-8f00-1b88ee47297b" Name="Retrieve" ID="3" Prefix="G">
+        <Description>A retrieve (R) operation is the recovering of entity information from the system. It requires reading access to the system. The state of the system is not changed after a successful retrieval operation. Usual command terminology: Retrieve &lt;entity&gt; [data | information], View &lt;entity&gt; [data | information], and Get &lt;entity&gt; [data | information].</Description>
+      </GlossaryItem>
+      <GlossaryItem UniqueID="41545ddc-3ded-4bde-93fa-883b83d4cdb6" Name="Update" ID="4" Prefix="G">
+        <Description>An update (U) operation is the modification of a subset of the data corresponding to an entity. It requires writing access to the system. The state of the system is changed after a successful update operation. Usual command terminology: Update &lt;entity&gt;, Modify &lt;entity&gt;, and Set &lt;entity&gt; [data | information].
+</Description>
+      </GlossaryItem>
+    </Glossary>
+    <Stakeholders />
+  </Model>
+</UCM-Document>

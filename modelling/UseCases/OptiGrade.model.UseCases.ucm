@@ -168,7 +168,7 @@ In the flow of events, the entity "system" represents a subset of components of 
         <HistoryItems />
         <Prose />
         <Preconditions>1. The service must be up.
-2. The visitor has an active account,
+2. The visitor has an active account.
 3. A current session may or may be not active.</Preconditions>
         <Postconditions>• If the operation was successful, the user is logged into and may use the system with his/her current role.
 • If not, the system state is unchanged. Any previously active session is now closed.</Postconditions>

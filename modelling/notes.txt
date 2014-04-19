@@ -3,6 +3,7 @@ Project Information
 Project name        : OptiGrade 3.0 On-line Service
 Project description : OptiGrade 3.0 is an on-line service for remote evaluation of multi-choice exams using desktop optical mark recognition technology with a Web application front-end.
 Author              : Waldemar Villamayor-Venialbo <wvenialbo@gmail.com>
+Company             : OptiSoft Ltd.
 Copyright notice    : Copyright © 1997‒2014, OptiSoft Ltd. All rights reserved.
 
 
@@ -43,3 +44,9 @@ Correspondent EN --> ES command name terminology:
   remove remover quitar eliminar (eliminate)
   anular cancelar
 ----------------------------------------------------------------------------------------------------
+
+Usuario click en crear <entity>
+Asignar los valores por defecto
+llamar a UC configure <entity>
+Crear <entity> con los valores establecidos por el usuario
+ 
