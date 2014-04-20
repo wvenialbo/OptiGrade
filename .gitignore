@@ -19,3 +19,18 @@
 *.exe
 *.out
 *.app
+
+# Reference documentation
+references
+technical
+
+# Deprecated versions
+deprecated
+
+# Backup files, desktop.ini, and .ssh folder
+*.bak
+desktop.ini
+.ssh
+
+# Test files
+*-test.*
