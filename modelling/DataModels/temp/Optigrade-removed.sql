@@ -1,6 +1,31 @@
 
 
 -- -----------------------------------------------------
+-- Table `UserManagement`.`PersonEmployments`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `UserManagement`.`PersonEmployments` (
+  `PersonId` BIGINT UNSIGNED NOT NULL,
+  `CompanyName` VARCHAR(64) NOT NULL,
+  `Phone` VARCHAR(24) NULL DEFAULT NULL,
+  `Fax` VARCHAR(24) NULL DEFAULT NULL,
+  `AddressId` BIGINT UNSIGNED NULL DEFAULT NULL,
+  `Notes` TEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`PersonId`),
+  INDEX `PersonEmployments_Addresses_AddressId_fx` (`AddressId` ASC),
+  CONSTRAINT `PersonEmployments_Addresses_AddressId_fk`
+    FOREIGN KEY (`AddressId`)
+    REFERENCES `PlaceManagement`.`Addresses` (`AddressId`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+  CONSTRAINT `PersonEmployments_Persons_PersonId_fk`
+    FOREIGN KEY (`PersonId`)
+    REFERENCES `UserManagement`.`Persons` (`PersonId`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `CriterioInstitución`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `CriterioInstitución` (

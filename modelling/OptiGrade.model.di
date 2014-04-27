@@ -10,10 +10,26 @@
     <availablePage>
       <emfPageIdentifier href="OptiGrade.model.notation#_M4ORYMXAEeOo1LBePScnfA"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="OptiGrade.model.notation#_VO64oMnIEeOp7Z1n24MRyw"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
-      <children xsi:type="di:TabFolder"/>
+      <children xsi:type="di:TabFolder">
+        <children>
+          <emfPageIdentifier href="OptiGrade.model.notation#_M4ORYMXAEeOo1LBePScnfA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="OptiGrade.model.notation#_yLy2YMWQEeO0Uf7iyNbhuw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="OptiGrade.model.notation#_dO5wcMW2EeOo1LBePScnfA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="OptiGrade.model.notation#_VO64oMnIEeOp7Z1n24MRyw"/>
+        </children>
+      </children>
     </windows>
   </sashModel>
 </di:SashWindowsMngr>

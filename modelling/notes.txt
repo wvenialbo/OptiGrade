@@ -1,10 +1,14 @@
 Project Information
 ===================
-Project name        : OptiGrade 3.0 On-line Service
-Project description : OptiGrade 3.0 is an on-line service for remote evaluation of multi-choice exams using desktop optical mark recognition technology with a Web application front-end.
-Author              : Waldemar Villamayor-Venialbo <wvenialbo@gmail.com>
+Name                : OptiGrade — Modelling Notes
+Version             : 1.0
+Author              : Waldemar Villamayor-Venialbo¹
+Project name        : OptiGrade 3.0 (On-line Service)
+Project description : OptiGrade 3.0 is an on-line service which provides a SAAS platform for processing and store optical captured data in the cloud. It provides an on-line optical answer sheet composer/editor, facilities for the remote scoring and evaluation of multi-choice exams, a framework with analytic tools for surveys data, captured using desktop optical mark recognition technology with a Web-based application front-end.
+Developers          : Waldemar Villamayor-Venialbo¹, Jorge Maidana-Montiel²
 Company             : OptiSoft Ltd.
 Copyright notice    : Copyright © 1997‒2014, OptiSoft Ltd. All rights reserved.
+References          : {wvenialbo¹,jmaidana18²}@gmail.com
 
 
 Modelling Notes
@@ -45,8 +49,62 @@ Correspondent EN --> ES command name terminology:
   anular cancelar
 ----------------------------------------------------------------------------------------------------
 
-Usuario click en crear <entity>
-Asignar los valores por defecto
-llamar a UC configure <entity>
-Crear <entity> con los valores establecidos por el usuario
- 
+Role Based GUI Management
+-------------------------
+A list of pages available for a role
+  - Useful for creating navigational menus on-the-fly.
+  - Useful to disallow showing a page that is not listed.
+
+Global page layout: header, footer, content, menus, asides (predefined)
+  - Useful for rapid composing and formatting a dynamic page.
+
+----------------------------------------------------------------------------------------------------
+Dynamic menus which can easily be modified without modifying program code
+When it is displayed show (activate) only the options that can actually be accessed
+Change access within a single screen to certain fields for certain users
+
+List --+--> Search  (R)
+       |
+       +--> Insert  (C)
+       |
+       +--> Enquire (R)
+       |
+       +--> Update  (U)
+       |
+       +--> Delete  (D)
+
+
+Auditing tables
+
+AccountManagement
+    Categories (CreatedOn, ModifiedOn)
+    Contracts ContractDetails (CreatedOn, ModifiedOn)
+	Accounts AccountDetails IndividualAccounts CorporateAccounts (CreatedOn, ModifiedOn)
+	AssignedOn
+		Categories / Contracts
+		Accounts / Contracts & Owner
+	
+----------------------------------------------------------------------------------------------------
+Color Presets
+=============
+
+Colors for tables, views, etc.
+
+#98BFDA  99CCDD  AACCEE
+#FEDE58  FFDD55  FFEE66
+#98D8A5  99DDAA  99EEBB
+#FE9898  FF9999
+#FE98FE  FF99FF
+#FFFFFF
+
+#88FF55  99FF66  AAFF77
+#FF8877
+
+Colors for layers, notes, etc.
+
+#FFEEEC  FFEEEE
+#FEFDED  FFFFEE
+#EAFFE5  EEFFEE
+#ECFDFF  EEFFFF
+#F0F1FE  FFFFFF
+#FFEBFA  FFEEFF

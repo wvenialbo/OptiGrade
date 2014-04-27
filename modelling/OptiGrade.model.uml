@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OptiGradeProfile="http:///schemas/OptiGradeProfile/_lCcAYMXFEeOo1LBePScnfA/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:l2="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L2" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/OptiGradeProfile/_lCcAYMXFEeOo1LBePScnfA/3 OptiGrade.profile.uml#_lClxYMXFEeOo1LBePScnfA">
   <uml:Model xmi:id="_yLxoQMWQEeO0Uf7iyNbhuw" name="OptiGrade Model">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_MLHA0MXNEeOo1LBePScnfA">
-      <body>A visitor is any unregistered user or a registered user whose account was not activated.&#xD;
-When a visitor signs up and his account activated, a new user is created and assigned the role &quot;Owner&quot; or &quot;Manager&quot;, respectively, according his account is &quot;Individual&quot; or &quot;Corporate&quot;.&#xD;
-There are only one owner or manager per account.</body>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_MLHA0MXNEeOo1LBePScnfA" annotatedElement="_IDifkMWuEeOo1LBePScnfA">
+      <body>The Owner is the account holder, initially, the user that signed up and created the account. There is only one owner per account, nevertheless, ownership can be transferred by the account holder.</body>
     </ownedComment>
-    <ownedComment xmi:type="uml:Comment" xmi:id="_l-qzwMX0EeOBqZqUlO-npA">
-      <body>1) Individual accounts can not have other administrative user than its owner.&#xD;
-2) Corporate accounts can have professors, operators, administrators, and manager.&#xD;
-3) Both types of accounts can have students.&#xD;
-4) The account signer is assigned the role &quot;Owner&quot; or &quot;Manager&quot;, respectively, according his account is &quot;Individual&quot; or &quot;Corporate&quot;. There are only one owner or manager per account.</body>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_dD7R0MkfEeOQbslaL-J8Og" annotatedElement="_WrB-IMWSEeO0Uf7iyNbhuw">
+      <body> A Visitor is any unregistered user or a registered user whose account was not activated.</body>
     </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_yLxoQcWQEeO0Uf7iyNbhuw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -33,7 +28,9 @@ There are only one owner or manager per account.</body>
       <ownedUseCase xmi:type="uml:UseCase" xmi:id="__qf1MMWmEeOo1LBePScnfA" name="Request new password" subject="_WUVx4MWREeO0Uf7iyNbhuw _d2xzIMWSEeO0Uf7iyNbhuw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_WrB-IMWSEeO0Uf7iyNbhuw" name="Visitor" isLeaf="true" useCase="_00ifoMWjEeO0Uf7iyNbhuw _AAbwUMWkEeO0Uf7iyNbhuw _DRwXIMWkEeO0Uf7iyNbhuw"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_d2xzIMWSEeO0Uf7iyNbhuw" name="User" useCase="_vgeIgMWkEeO0Uf7iyNbhuw _1UAigMWmEeOo1LBePScnfA __qf1MMWmEeOo1LBePScnfA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_d2xzIMWSEeO0Uf7iyNbhuw" name="User" useCase="_vgeIgMWkEeO0Uf7iyNbhuw _1UAigMWmEeOo1LBePScnfA __qf1MMWmEeOo1LBePScnfA">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HaNz4MkeEeOQbslaL-J8Og" general="_WrB-IMWSEeO0Uf7iyNbhuw"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WuU9MMWnEeOo1LBePScnfA" name="A visitor signs up" memberEnd="_WuU9McWnEeOo1LBePScnfA _WuU9NMWnEeOo1LBePScnfA">
       <ownedEnd xmi:type="uml:Property" xmi:id="_WuU9McWnEeOo1LBePScnfA" name="visitor" type="_WrB-IMWSEeO0Uf7iyNbhuw" association="_WuU9MMWnEeOo1LBePScnfA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WuU9MsWnEeOo1LBePScnfA" value="1"/>
@@ -104,7 +101,7 @@ There are only one owner or manager per account.</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uSeulsWoEeOo1LBePScnfA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_3D3SYMWtEeOo1LBePScnfA" name="Administrator">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_3D3SYMWtEeOo1LBePScnfA" name="Manager">
       <generalization xmi:type="uml:Generalization" xmi:id="_Po4D0MWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_6JIaMMWtEeOo1LBePScnfA" name="Operator">
@@ -114,14 +111,13 @@ There are only one owner or manager per account.</body>
       <generalization xmi:type="uml:Generalization" xmi:id="_J3nP0MWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_IDifkMWuEeOo1LBePScnfA" name="Owner" useCase="_yBcQcMWkEeO0Uf7iyNbhuw">
-      <generalization xmi:type="uml:Generalization" xmi:id="_doVoUMWvEeOo1LBePScnfA" general="_6JIaMMWtEeOo1LBePScnfA"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_doVoUMWvEeOo1LBePScnfA" general="_3D3SYMWtEeOo1LBePScnfA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_jen7sMWuEeOo1LBePScnfA" name="Student" isLeaf="true">
       <generalization xmi:type="uml:Generalization" xmi:id="_HbQiIMWvEeOo1LBePScnfA" general="_d2xzIMWSEeO0Uf7iyNbhuw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_6R8igMWuEeOo1LBePScnfA" name="Manager">
-      <generalization xmi:type="uml:Generalization" xmi:id="_Vz3mcMWvEeOo1LBePScnfA" general="_3D3SYMWtEeOo1LBePScnfA"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="_e819IMWvEeOo1LBePScnfA" general="_IDifkMWuEeOo1LBePScnfA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6R8igMWuEeOo1LBePScnfA" name="Clerk">
+      <generalization xmi:type="uml:Generalization" xmi:id="_I3G9wMkgEeOQbslaL-J8Og" general="_WrB-IMWSEeO0Uf7iyNbhuw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_kO2lIMW2EeOo1LBePScnfA" name="User Management" useCase="_IEpjwMW3EeOo1LBePScnfA _NQ3J8MW3EeOo1LBePScnfA _ejlO8MW3EeOo1LBePScnfA _tDCiIMW3EeOo1LBePScnfA _bPcLYMW8EeOo1LBePScnfA _jl1OkMW8EeOo1LBePScnfA _kiPMcMW8EeOo1LBePScnfA _PT4UIMXDEeOo1LBePScnfA _kGSLQMXzEeOBqZqUlO-npA">
       <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IEpjwMW3EeOo1LBePScnfA" name="Create user" subject="_kO2lIMW2EeOo1LBePScnfA">
@@ -262,6 +258,26 @@ There are only one owner or manager per account.</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0I0axcXzEeOBqZqUlO-npA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0I0axsXzEeOBqZqUlO-npA" value="1"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_XsBHEMkhEeOQbslaL-J8Og" name="Technician">
+      <generalization xmi:type="uml:Generalization" xmi:id="_tOGvgMkhEeOQbslaL-J8Og" general="_6R8igMWuEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_c8ZbkMkhEeOQbslaL-J8Og" name="Programmer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_vKotoMkhEeOQbslaL-J8Og" general="_6R8igMWuEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_kkE-oMkhEeOQbslaL-J8Og" name="Designer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uCLQwMkhEeOQbslaL-J8Og" general="_6R8igMWuEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_pW_7EMkhEeOQbslaL-J8Og" name="Administrator">
+      <generalization xmi:type="uml:Generalization" xmi:id="_BSBw0MkiEeOQbslaL-J8Og" general="_72Q2QMkiEeOQbslaL-J8Og"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_72Q2QMkiEeOQbslaL-J8Og" name="Officer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_IVCEEMkjEeOQbslaL-J8Og" general="_6R8igMWuEeOo1LBePScnfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_QaNzgMnIEeOp7Z1n24MRyw" name="Interaction1"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9KSJAMnJEeOp7Z1n24MRyw" name="Developer">
+      <generalization xmi:type="uml:Generalization" xmi:id="__7K8QMnJEeOp7Z1n24MRyw" general="_c8ZbkMkhEeOQbslaL-J8Og"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_AztGwMnKEeOp7Z1n24MRyw" general="_kkE-oMkhEeOQbslaL-J8Og"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Kd3TIMWREeO0Uf7iyNbhuw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KeBEIMWREeO0Uf7iyNbhuw" source="http://www.eclipse.org/uml2/2.0.0/UML">
