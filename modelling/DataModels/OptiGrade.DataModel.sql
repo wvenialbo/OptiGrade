@@ -209,8 +209,6 @@ CREATE TABLE IF NOT EXISTS `AccountsManagement`.`Contracts` (
   `ContractId` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'ID for this contract.',
   `CategoryId` BIGINT UNSIGNED NOT NULL COMMENT 'ID for the contract\'s account category.',
   `Name` VARCHAR(32) NOT NULL COMMENT 'Unique name for this contract.',
-  `Quota` INT(11) NOT NULL COMMENT 'Quota for this contract.',
-  `Units` ENUM('Sheet', 'Day') NOT NULL DEFAULT 'Sheet' COMMENT 'Units in which the quota is expressed.',
   `Visibility` ENUM('Public', 'Hidden', 'Private') NOT NULL DEFAULT 'Public' COMMENT 'Visibility of this Contract.',
   `Description` TEXT NULL DEFAULT NULL COMMENT 'Description for this Contract.',
   PRIMARY KEY (`ContractId`, `CategoryId`),
@@ -379,7 +377,6 @@ CREATE TABLE IF NOT EXISTS `AccountsManagement`.`AccountDetails` (
   `AccountId` BIGINT UNSIGNED NOT NULL,
   `AddressId` BIGINT UNSIGNED NOT NULL,
   `IDC` VARCHAR(16) NOT NULL COMMENT 'Contributor ID.',
-  `Balance` INT(11) NOT NULL COMMENT 'Current balance or remaining quota for this account. Could be negative.',
   `Comments` TEXT NULL DEFAULT NULL COMMENT 'Any comment about the account status.',
   PRIMARY KEY (`AccountId`),
   INDEX `AccountDetails_Addresses_AddressId_fx` (`AddressId` ASC),
@@ -765,5 +762,5 @@ DELIMITER ;
 -- HeidiSQL version:             6.0.0.4024
 -- phpMyAdmin version:           4.0.4
 -- PHP version:                  5.4.16
--- Date/time:                    2014-04-25 09:37:39
+-- Date/time:                    2014-04-27 09:19:25
 -- --------------------------------------------------------

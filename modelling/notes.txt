@@ -83,6 +83,14 @@ AccountManagement
 	AssignedOn
 		Categories / Contracts
 		Accounts / Contracts & Owner
+
+Schema for payment control
+
+Table for ContractQuota extends Contracts (Quota INT4 NN, Units CONTRACT_UNIT_ENUM NN)
+  `Quota` INT4 NOT NULL COMMENT 'Quota for this contract.',
+  `Units` ENUM('Sheet', 'Day') NOT NULL DEFAULT 'Sheet' COMMENT 'Units in which the quota is expressed.',
+          AccountBalance extends AccountDetails (Balance INT4 NN)
+  `Balance` INT4 NOT NULL COMMENT 'Current balance or remaining quota for this account. Could be negative.',
 	
 ----------------------------------------------------------------------------------------------------
 Color Presets
