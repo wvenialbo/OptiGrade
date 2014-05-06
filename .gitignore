@@ -33,4 +33,5 @@ desktop.ini
 .ssh
 
 # Test files
-*-test.*
+*.old.*
+*.test.*
