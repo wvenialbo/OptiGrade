@@ -1,14 +1,59 @@
 Project Information
-===================
+====================================================================================================
 Name                : OptiGrade — Modelling Notes
 Version             : 1.0
 Author              : Waldemar Villamayor-Venialbo¹
 Project name        : OptiGrade 3.0 (On-line Service)
-Project description : OptiGrade 3.0 is an on-line service which provides a SAAS platform for processing and store optical captured data in the cloud. It provides an on-line optical answer sheet composer/editor, facilities for the remote scoring and evaluation of multi-choice exams, a framework with analytic tools for surveys data, captured using desktop optical mark recognition technology with a Web-based application front-end.
+Project description : OptiGrade 3.0 is an on-line service which provides a SAAS platform for
+                      processing and store optically captured data in the cloud. It provides an
+					  on-line optical answer sheet composer/editor, facilities for the remote
+					  scoring and evaluation of multi-choice exams, a framework with analytic
+					  tools for surveys data, captured using desktop optical mark recognition
+					  technology with a Web-based application front-end.
 Developers          : Waldemar Villamayor-Venialbo¹, Jorge Maidana-Montiel²
 Company             : OptiSoft Ltd.
 Copyright notice    : Copyright © 1997‒2014, OptiSoft Ltd. All rights reserved.
 References          : {wvenialbo¹,jmaidana18²}@gmail.com
+----------------------------------------------------------------------------------------------------
+una plataforma SAAS que permite procesar y almacenar, en la nube, información obtenida con
+dispositivos de escritorio para captura óptica de datos
+
+
+Color Presets
+=============
+
+Colors for tables, views, etc.
+
+#98BFDA  99CCDD  AACCEE
+#FEDE58  FFDD55  FFEE66
+#98D8A5  99DDAA  99EEBB
+#FE9898  FF9999
+#FE98FE  FF99FF
+#FFFFFF
+
+#88FF55  99FF66  AAFF77
+#FF8877
+
+Colors for layers, notes, etc.
+
+#FFEEEC  FFEEEE
+#FEFDED  FFFFEE
+#EAFFE5  EEFFEE
+#ECFDFF  EEFFFF
+#F0F1FE  FFFFFF
+#FFEBFA  FFEEFF
+
+Users
+-------------------------------
+
+AuthenticationAgent SELECT ON UserManagements, AccessControl
+                    INSERT ON AccessControl.Sessions
+
+StudentQueryAgent (Limited queries and reports)
+OfficerQueryAgent (Any queries and reports)
+  OfficerInsert   (plus insertions)
+    OfficerUpdate (plus audited-critical/non-critical modifications, add/remove users, change roles)
+	  Owner       (add/remove admins, transfer ownership)
 
 
 Modelling Notes
@@ -75,6 +120,7 @@ List --+--> Search  (R)
 
 
 Auditing tables
+---------------------------
 
 AccountManagement
     Categories (CreatedOn, ModifiedOn)
@@ -93,26 +139,55 @@ Table for ContractQuota extends Contracts (Quota INT4 NN, Units CONTRACT_UNIT_EN
   `Balance` INT4 NOT NULL COMMENT 'Current balance or remaining quota for this account. Could be negative.',
 	
 ----------------------------------------------------------------------------------------------------
-Color Presets
-=============
 
-Colors for tables, views, etc.
 
-#98BFDA  99CCDD  AACCEE
-#FEDE58  FFDD55  FFEE66
-#98D8A5  99DDAA  99EEBB
-#FE9898  FF9999
-#FE98FE  FF99FF
-#FFFFFF
+Webpage components
+-------------------------------
+Static
+  Doctype [0] <!DOCTYPE html>
+  Head [2] <head>
+  Style sheets [6] <link rel="stylesheet" type="text/css" href="path/file.css" />
+  Scripting language [3.3] <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  Compatibility [3.4] <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  Body [7] <body>
+Metadata [3]
+  Encoding [3.1] <meta charset="{$encoding}" />
+  Language [1,3.2] <html lang="{$lang}" dir="{$dir}">, <meta http-equiv="Content-Language" content="{$lang}-{$locale}" />
+  Generator [3.5] <meta name="generator" content="{$appName}" />
+  Script files [5] <script type="text/javascript" src="path/file.js"></script>, <script></script>
+Content
+  Header
+    menu
+    alternate menu
+    search toolbox
+  Navigation
+  Aside
+  Footer
 
-#88FF55  99FF66  AAFF77
-#FF8877
+  
+Non-functional requirements
+===========================
 
-Colors for layers, notes, etc.
+Tools
+---------------------------
+  Sass       {methodology} (Compass ver. ...)
 
-#FFEEEC  FFEEEE
-#FEFDED  FFFFEE
-#EAFFE5  EEFFEE
-#ECFDFF  EEFFFF
-#F0F1FE  FFFFFF
-#FFEBFA  FFEEFF
+Sever side
+---------------------------
+  PostgreSQL [setup: phpPgAdmin, production] (ver. 9.3)
+  MySQL      [design: WAMP, phpMyAdmin] (ver. 5.6.12, InnoDB engine)
+  Apache     [design: WAMP, production: Standalone] (ver. 2.4.4, HTTP 1.1, HTTPS, SSH, SSL)
+  PHP        [design: WAMP, production: Standalone] (ver. 5.4.16)
+  Smarty     {framework: template engine} (ver. 3.1.18)
+  Bootstrap  {framework: responsive presentation} (ver. 3.1.1)
+  
+Client side
+---------------------------
+  HTML5      {technology}
+  CSS3       {technology}
+  JavaScript {technology} (ver 1.1-1.3)
+  jQuery     {framework: cross browser experience} (ver. 2.1.1)
+  jQueryUI   {framework: user interface experience} (ver. 1.10.4)
+  jQueryMob  {framework: mobile experience} (ver. 1.4.2)
+	
+===========================
