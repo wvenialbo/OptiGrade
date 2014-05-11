@@ -14,13 +14,16 @@
     <meta name="generator" content="OptiGrade Framework ver. 3.0 (2014)" />
 
     <!-- SEO meta tags -->
-    <title>OptiSoft &mdash; Capturing the future</title>
+    <title>OptiSoft &mdash; Site Map</title>
 
     <!-- Social meta tags -->
 
     <!-- Bootstrap framework core stylesheets files (ver. 3.1.1) -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+
+    <!-- Tree view for Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css" />
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="css/style-global.css" />
@@ -59,13 +62,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button><!-- /.navbar-toggle -->
-          <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-share"></i> OptiSoft</a>
+          <a class="navbar-brand" href="/"><i class="glyphicon glyphicon-share"></i> OptiSoft</a>
         </div><!-- /.navbar-header -->
 
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+            <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>
             <li class="dropdown">
               <a href="services.html" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cloud"></i> Services <b class="caret"></b></a></span>
               <ul class="dropdown-menu">
@@ -84,14 +87,14 @@
               </ul><!--/.dropdown-menu -->
             </li><!--/.dropdown -->
             <li><a href="projects.html"><i class="glyphicon glyphicon-cog glyphicon-book"></i> Projects</a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="support.html" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-wrench"></i> Support <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">Get help!</li>
                 <li><a href="faq.html"><i class="glyphicon glyphicon-question-sign"></i> F.A.Q.</a></li>
                 <li><a href="forum.html"><i class="glyphicon glyphicon-comment"></i> User&rsquo;s Forums</a></li>
                 <li><a href="contact.support.html?who=support"><i class="glyphicon glyphicon-pencil"></i> Contact Support</a></li>
-                <li><a href="sitemap.html"><i class="glyphicon glyphicon-globe"></i> Site Map</a></li>
+                <li class="active"><a href="#"><i class="glyphicon glyphicon-globe"></i> Site Map</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Drivers</li>
                 <li><a href="download.html"><i class="glyphicon glyphicon-download-alt"></i> Downloads</a></li>
@@ -172,113 +175,39 @@
     <section class="container" id="page-area">
       
       <ol class="breadcrumb">
-        <li class="active">Home</li>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="support.html">Support Centre</a></li>
+        <li class="active">Site Map</li>
       </ol>
 
       <section class="row" id="main-content">
 
         <div class="col-md-9" id="doc-content">
 
-          <section id="market-area">
-            <div class="jumbotron">
-              <h1>Marketing stuff!</h1>
-              <p>
-                <span class="lipsum-i-ix"></span> <span class="lipsum-i-iv"></span> <span class="lipsum-i-vi"></span>
-              </p>
-              <a href="#" class="btn btn-large btn-danger">Get Started</a>
-            </div><!-- /.jumbotron  -->
-          </section><!-- /#market-area -->
+          <section id="sitemap-block">
+            <header id="sitemap-heading">
+              <h2>Site Map</h2>
+            </header><!-- /#sitemap-heading -->
 
-          <article id="welcome-article">
-            <section id="welcome-entry">
-              <h2 class="text-primary">Welcome to OptiSoft<span class="OptiSoft-check" style="margin-left:-118px;"></span></h2>
-              <p class="lipsum-i"></p>
-            </section><!-- /#welcome-entry -->
-          </article><!-- /#welcome-article -->
+            <div id="sitemap-tree"></div>
 
-          <section id="what-news">
-            <header style="margin-bottom:-16px;">
-              <h3 class="text-primary" style="margin-bottom:-15px;">Quid novi?</h3>
-              <hr />
-            </header>
-
-            <div class="row" id="news-content" style="margin-bottom:-15px;">
-
-              <div class="col-sm-6">
-                <h4 class="text-primary">Tech News <small><a href="news.html" class="glyphicon glyphicon-new-window" title="Go to News"></a></small></h4>
-                <article id="hm-news-1">
-                  <h5><span class="lipsum-i-x"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xx"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-                <article id="hm-news-2">
-                  <h5><span class="lipsum-i-ix"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xv"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-              </div>
-
-              <div class="col-sm-6">
-                <h4 class="text-primary">Articles <small><a href="articles.html" class="glyphicon glyphicon-new-window" title="Go to Articles"></a></small></h4>
-                <article id="hm-art-1">
-                  <h5><span class="lipsum-i-xii"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xiii"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-                <article id="hm-art-2">
-                  <h5><span class="lipsum-i-xi"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xxi"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-              </div>
-
-            </div>
-
-            <hr />
-          </section><!-- /#what-news -->
-
-
-          <aside class="row" id="testimonials-et-al">
-            <div class="col-sm-6">
-              <h4 class="muted text-center lipsum-hdr-ii"></h4>
-              <p>
-                <em class="lipsum-i-i"></em> <em class="lipsum-i-ii"></em>
-                <em class="lipsum-i-iii"></em> <em class="lipsum-i-iv"></em> 
-                <em class="lipsum-i-ix"></em>
-              </p>
-              <div class="text-center"><a href="#" class="btn btn-xs btn-info">Read more &hellip;</a></div>
-            </div><!-- /.col-sm-6 -->
-            <div class="col-sm-6">
-              <h4 class="muted text-center lipsum-hdr-iii"></h4>
-              <p>
-                <em class="lipsum-i-vii"></em> <em class="lipsum-i-viii"></em>
-                <em class="lipsum-i-ix"></em> <em class="lipsum-i-x"></em> 
-                <em class="lipsum-i-xi"></em> <em class="lipsum-i-xii"></em>
-                <em class="lipsum-i-xiii"></em> <em class="lipsum-i-xv"></em>
-              </p>
-              <div class="text-center"><a href="#" class="btn btn-xs btn-info">Read more &hellip;</a></div>
-            </div><!-- /.col-sm-6 -->
-          </aside><!-- /.row #testimonials-et-al -->
+          </section><!-- /#sitemap-block -->
 
         </div><!-- /.col-md-9 #doc-content -->
 
         <div class="col-md-3" id="sidebar">
           <section id="side-features">
             <h4 class="text-info">Features and Promos</h4>
-            <p><small class="lipsum-iv"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
           </section><!-- /#side-features -->
           <section id="side-news">
             <hgroup>
               <h4 class="text-info">Updates</h4>
               <h5><big>May 2014</big></h5>
             </hgroup>
-            <p><small class="lipsum-v"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
             <h5><big>April 2014</big></h5>
-            <p><small class="lipsum-v"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
           </section><!-- /#side-news -->
           <section id="side-contact">
             <h4 class="text-info">Contact</h4>
@@ -303,6 +232,141 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <!-- Bootstrap framework core javascript files (ver. 3.1.1) -->
     <script src="js/bootstrap.js" type="text/javascript"></script>
+    <!-- Tree View for Twitter Bootstrap -->
+    <script src="js/bootstrap-treeview.js"></script>
+
+    <script type="text/javascript">
+        // Some logic to retrieve, or generate tree structure
+      function siteTree() {
+        var sitemap = [
+          {
+            text: "OptiSoft",
+            icon: "glyphicon glyphicon-share",
+            nodes: [
+              {
+                text: "Home",
+                href: "index.html",
+                icon: "glyphicon glyphicon-home",
+              },
+              {
+                text: "Services <span class=\"text-muted\">&mdash; Services and Products</span>",
+                href: "services.html",
+                tags: ["3"],
+                icon: "glyphicon glyphicon-cloud",
+                nodes: [
+                  {
+                    text: "OptiGrade Service",
+                    href: "optigrade.html",
+                    icon: "glyphicon glyphicon-check",
+                  },
+                  {
+                    text: "OptiSurvey Service",
+                    href: "optisurvey.html",
+                    icon: "glyphicon glyphicon-edit",
+                  },
+                  {
+                    text: "Products",
+                    href: "products.html",
+                    icon: "glyphicon glyphicon-tag",
+                  },
+                ]
+              },
+              {
+                text: "Publications <span class=\"text-muted\">&mdash; Featured news and articles</span>",
+                href: "features.html",
+                tags: ["2"],
+                icon: "glyphicon glyphicon-folder-close",
+                nodes: [
+                  {
+                    text: "Tech News",
+                    href: "news.html",
+                    icon: "glyphicon glyphicon-send",
+                  },
+                  {
+                    text: "Featured Articles",
+                    href: "articles.html",
+                    icon: "glyphicon glyphicon-file",
+                  },
+                ]
+              },
+              {
+                text: "Projects",
+                href: "projects.html",
+                icon: "glyphicon glyphicon-book",
+              },
+              {
+                text: "Support <span class=\"text-muted\">&mdash; Get help! / Download drivers</span>",
+                href: "support.html",
+                tags: ["5"],
+                icon: "glyphicon glyphicon-wrench",
+                nodes: [
+                  {
+                    text: "F.A.Q.",
+                    href: "faq.html",
+                    icon: "glyphicon glyphicon-question-sign",
+                  },
+                  {
+                    text: "User's Forums",
+                    href: "forum.html",
+                    icon: "glyphicon glyphicon-comment",
+                  },
+                  {
+                    text: "Contact Support",
+                    href: "contact.support.html?who=support",
+                    icon: "glyphicon glyphicon-pencil",
+                  },
+                  {
+                    text: "Site Map",
+                    href: "#",
+                    icon: "glyphicon glyphicon-globe",
+                  },
+                  {
+                    text: "Downloads",
+                    href: "download.html",
+                    icon: "glyphicon glyphicon-download-alt",
+                  },
+                ]
+              },
+              {
+                text: "About Us",
+                href: "about.html",
+                tags: ["4"],
+                icon: "glyphicon glyphicon-info-sign",
+                nodes: [
+                  {
+                    text: "About Optisoft",
+                    href: "about.html#",
+                    icon: "glyphicon glyphicon-briefcase",
+                  },
+                  {
+                    text: "About this Site",
+                    href: "about.html#this-site",
+                    icon: "glyphicon glyphicon-link",
+                  },
+                  {
+                    text: "Our Partners",
+                    href: "about.html#partners",
+                    icon: "glyphicon glyphicon-star",
+                  },
+                  {
+                    text: "Our Staff",
+                    href: "about.html#staff",
+                    icon: "glyphicon glyphicon-user",
+                  },
+                ]
+              },
+            ]
+          },
+        ];
+        return sitemap;
+      }
+      $('#sitemap-tree').treeview({
+          data: siteTree(),
+          enableLinks: true,
+          showTags: true,
+          levels: 2
+        });
+  </script>
 
   </body>
 </html>

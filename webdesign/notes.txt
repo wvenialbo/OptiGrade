@@ -1,0 +1,123 @@
+Project Information
+====================================================================================================
+Name                : OptiGrade — Modelling Notes
+Version             : 1.0
+Author              : Waldemar Villamayor-Venialbo¹
+Project name        : OptiGrade 3.0 (On-line Service)
+Project description : OptiGrade 3.0 is an on-line service which provides a SAAS platform for
+                      processing and store optically captured data in the cloud. It provides an
+					  on-line optical answer sheet composer/editor, facilities for the remote
+					  scoring and evaluation of multi-choice exams, a framework with analytic
+					  tools for surveys data, captured using desktop optical mark recognition
+					  technology with a Web-based application front-end.
+Developers          : Waldemar Villamayor-Venialbo¹, Jorge Maidana-Montiel²
+Company             : OptiSoft Ltd.
+Copyright notice    : Copyright © 1997‒2014, OptiSoft Ltd. All rights reserved.
+References          : {wvenialbo¹,jmaidana18²}@gmail.com
+----------------------------------------------------------------------------------------------------
+una plataforma SAAS que permite procesar y almacenar, en la nube, información obtenida con
+dispositivos de escritorio para captura óptica de datos
+
+Role Based GUI Management
+-------------------------
+A list of pages available for a role
+  - Useful for creating navigational menus on-the-fly.
+  - Useful to disallow showing a page that is not listed.
+
+Global page layout: header, footer, content, menus, asides (predefined)
+  - Useful for rapid composing and formatting a dynamic page.
+
+----------------------------------------------------------------------------------------------------
+Dynamic menus which can easily be modified without modifying program code
+When it is displayed show (activate) only the options that can actually be accessed
+Change access within a single screen to certain fields for certain users
+
+List --+--> Search  (R)
+       |
+       +--> Insert  (C)
+       |
+       +--> Enquire (R)
+       |
+       +--> Update  (U)
+       |
+       +--> Delete  (D)
+
+Webpage components
+-------------------------------
+Static
+  Doctype [0] <!DOCTYPE html>
+  Head [2] <head>
+  Style sheets [6] <link rel="stylesheet" type="text/css" href="path/file.css" />
+  Scripting language [3.3] <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  Compatibility [3.4] <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  Body [7] <body>
+Metadata [3]
+  Encoding [3.1] <meta charset="{$encoding}" />
+  Language [1,3.2] <html lang="{$lang}" dir="{$dir}">, <meta http-equiv="Content-Language" content="{$lang}-{$locale}" />
+  Generator [3.5] <meta name="generator" content="{$appName}" />
+  Script files [5] <script type="text/javascript" src="path/file.js"></script>, <script></script>
+Content
+  Header
+    menu
+    alternate menu
+    search toolbox
+  Navigation
+  Aside
+  Footer
+
+
+RIGHT Social: fb, g+, tw, in
+list-style-image: url("http://www.asdesigning.com/demo/asj63/templates/as002063/images/li.style.footer.png");
+
+Header toolbar left: social  right zzz | zzz | My Account
+Footer toolbar left: copyright (c) 2014 optisoft right  terms of use | privacy policy
+
+Please carefully read the following terms and conditions.
+Yes, I accept the above Terms & Conditions.
+We can revise or change these Terms (in whole or in part) from time to time and at any time without notice to you. 
+
+http://www.asdesigning.com/demo/asj48/templates/as002048/css/tmpl.default.css/../images/social/twitter.png
+http://www.asdesigning.com/demo/asj48/templates/as002048/images/social/twitter.png
+
+
+Gradient
+-----------------------------------------------------
+http://www.colorzilla.com/gradient-editor/
+http://ie.microsoft.com/TEStdrive/Graphics/CSSGradientBackgroundMaker/Default.html
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+
+  
+Non-functional requirements
+===========================
+
+Tools
+---------------------------
+  Sass       {methodology} (Compass ver. ...)
+
+Sever side
+---------------------------
+  PostgreSQL [setup: phpPgAdmin, production] (ver. 9.3)
+  MySQL      [design: WAMP, phpMyAdmin] (ver. 5.6.12, InnoDB engine)
+  Apache     [design: WAMP, production: Standalone] (ver. 2.4.4, HTTP 1.1, HTTPS, SSH, SSL)
+  PHP        [design: WAMP, production: Standalone] (ver. 5.4.16)
+  Smarty     {framework: template engine} (ver. 3.1.18)
+  Bootstrap  {framework: responsive presentation} (ver. 3.1.1)
+  
+Client side
+---------------------------
+  HTML5      {technology}
+  CSS3       {technology}
+  JavaScript {technology} (ver 1.1-1.3)
+  jQuery     {framework: cross browser experience} (ver. 2.1.1)
+  jQueryUI   {framework: user interface experience} (ver. 1.10.4)
+  jQueryMob  {framework: mobile experience} (ver. 1.4.2)
+	
+===========================

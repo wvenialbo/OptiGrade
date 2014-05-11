@@ -1,0 +1,84 @@
+/*!
+ * OptiSoft Web Platform v1.0.0
+ *
+ * Global styles
+ *
+ * Copyright 2014 OptiSoft, Inc.
+ */
+
+/* Layout styles
+=========================================================== */
+/* Navigation bar styles (using Bootstrap navbar)
+----------------------------------------------------------- */
+/* Required for the fixed at the top method */
+ body {
+  min-height: 100px;
+  padding-top: 70px;
+}
+/* Site's footer styles (using Bootstrap footer)
+----------------------------------------------------------- */
+/* Required for the sticky footer method */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height (see line #30) */
+  margin-bottom: 60px;
+}
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+ /* Custom footer layout/skinning */
+  margin-top: 30px;
+  background-color: #a90329;
+  background: #a90329; /* Old browsers */
+  background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+  background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+  background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+  background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+  -moz-box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+  box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+}
+/* Not required for template or sticky footer method. */
+.sticky-footer .container {
+  padding: 0 15px;
+}
+.sticky-footer .container .text-muted {
+  margin: 20px 0;
+}
+/* Custom page CSS styles
+=========================================================== */
+/* Logo icons */
+.OptiSoft-check:before {
+  color: #f00;
+  content: "\2713";
+  display: inline-block;
+}
+.OptiSoft-check-b:before {
+  color: #f00;
+  content: "\2714";
+}
+.OptiSoft-select:before {
+  color: #f00;
+  content: "\2717";
+}
+.OptiSoft-select-b:before {
+  color: #f00;
+  content: "\2718";
+}
+/* Latest's panel */
+.latest-panel {
+  padding: 10px 20px 20px;
+  text-align: center;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+}

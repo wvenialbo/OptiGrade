@@ -14,13 +14,16 @@
     <meta name="generator" content="OptiGrade Framework ver. 3.0 (2014)" />
 
     <!-- SEO meta tags -->
-    <title>OptiSoft &mdash; Capturing the future</title>
+    <title>OptiSoft &mdash; Sign Up</title>
 
     <!-- Social meta tags -->
 
     <!-- Bootstrap framework core stylesheets files (ver. 3.1.1) -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+
+    <!-- Date/Time picker for Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css" />
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="css/style-global.css" />
@@ -59,13 +62,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button><!-- /.navbar-toggle -->
-          <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-share"></i> OptiSoft</a>
+          <a class="navbar-brand" href="/"><i class="glyphicon glyphicon-share"></i> OptiSoft</a>
         </div><!-- /.navbar-header -->
 
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+            <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>
             <li class="dropdown">
               <a href="services.html" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cloud"></i> Services <b class="caret"></b></a></span>
               <ul class="dropdown-menu">
@@ -94,7 +97,7 @@
                 <li><a href="sitemap.html"><i class="glyphicon glyphicon-globe"></i> Site Map</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Drivers</li>
-                <li><a href="download.html"><i class="glyphicon glyphicon-download-alt"></i> Downloads</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> Downloads</a></li>
               </ul><!--/.dropdown-menu -->
             </li><!--/.dropdown -->
             <li class="dropdown">
@@ -125,7 +128,7 @@
                 <li><a href="account.signout.html?tool=signout"><i class="glyphicon glyphicon-log-out"></i> Log out</a></li>
               </ul><!--/.dropdown-menu -->
             </li><!--/.dropdown -->
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="login.signin.html?tool=login" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-log-in"></i> Log in <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header text-center">Sign In</li>
@@ -172,113 +175,140 @@
     <section class="container" id="page-area">
       
       <ol class="breadcrumb">
-        <li class="active">Home</li>
+        <li><a href="index.html">Start</a></li>
+        <li class="active">User Sign Up</li>
       </ol>
 
       <section class="row" id="main-content">
 
         <div class="col-md-9" id="doc-content">
 
-          <section id="market-area">
-            <div class="jumbotron">
-              <h1>Marketing stuff!</h1>
-              <p>
-                <span class="lipsum-i-ix"></span> <span class="lipsum-i-iv"></span> <span class="lipsum-i-vi"></span>
-              </p>
-              <a href="#" class="btn btn-large btn-danger">Get Started</a>
-            </div><!-- /.jumbotron  -->
-          </section><!-- /#market-area -->
+          <section id="signup-block">
+            <header id="signup-heading">
+              <h2>User Sign Up</h2>
+            </header><!-- /#signup-heading -->
 
-          <article id="welcome-article">
-            <section id="welcome-entry">
-              <h2 class="text-primary">Welcome to OptiSoft<span class="OptiSoft-check" style="margin-left:-118px;"></span></h2>
-              <p class="lipsum-i"></p>
-            </section><!-- /#welcome-entry -->
-          </article><!-- /#welcome-article -->
-
-          <section id="what-news">
-            <header style="margin-bottom:-16px;">
-              <h3 class="text-primary" style="margin-bottom:-15px;">Quid novi?</h3>
-              <hr />
-            </header>
-
-            <div class="row" id="news-content" style="margin-bottom:-15px;">
-
-              <div class="col-sm-6">
-                <h4 class="text-primary">Tech News <small><a href="news.html" class="glyphicon glyphicon-new-window" title="Go to News"></a></small></h4>
-                <article id="hm-news-1">
-                  <h5><span class="lipsum-i-x"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xx"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-                <article id="hm-news-2">
-                  <h5><span class="lipsum-i-ix"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xv"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-              </div>
-
-              <div class="col-sm-6">
-                <h4 class="text-primary">Articles <small><a href="articles.html" class="glyphicon glyphicon-new-window" title="Go to Articles"></a></small></h4>
-                <article id="hm-art-1">
-                  <h5><span class="lipsum-i-xii"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xiii"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-                <article id="hm-art-2">
-                  <h5><span class="lipsum-i-xi"></span></h5>
-                  <img data-src="holder.js/200x125" src="data:image/png;base64," class="img-thumbnail" style="float:left;margin:0 8px 8px 0;" />
-                  <p class="lipsum-xxi"></p>
-                  <p class="text-right" style="padding-right:5px;"><a href="#">Read More&hellip;</a></p>
-                </article>
-              </div>
-
-            </div>
+            <p>Please fill the form with the required information, then click on <tt>&lt;SEND&gt;</tt>.</p>
 
             <hr />
-          </section><!-- /#what-news -->
 
+            <form class="form-horizontal" role="form" id="signup-form" action="#">
 
-          <aside class="row" id="testimonials-et-al">
-            <div class="col-sm-6">
-              <h4 class="muted text-center lipsum-hdr-ii"></h4>
-              <p>
-                <em class="lipsum-i-i"></em> <em class="lipsum-i-ii"></em>
-                <em class="lipsum-i-iii"></em> <em class="lipsum-i-iv"></em> 
-                <em class="lipsum-i-ix"></em>
-              </p>
-              <div class="text-center"><a href="#" class="btn btn-xs btn-info">Read more &hellip;</a></div>
-            </div><!-- /.col-sm-6 -->
-            <div class="col-sm-6">
-              <h4 class="muted text-center lipsum-hdr-iii"></h4>
-              <p>
-                <em class="lipsum-i-vii"></em> <em class="lipsum-i-viii"></em>
-                <em class="lipsum-i-ix"></em> <em class="lipsum-i-x"></em> 
-                <em class="lipsum-i-xi"></em> <em class="lipsum-i-xii"></em>
-                <em class="lipsum-i-xiii"></em> <em class="lipsum-i-xv"></em>
-              </p>
-              <div class="text-center"><a href="#" class="btn btn-xs btn-info">Read more &hellip;</a></div>
-            </div><!-- /.col-sm-6 -->
-          </aside><!-- /.row #testimonials-et-al -->
+              <div class="form-group">
+                <label for="first-name" class="col-lg-3 control-label">First name:</label>
+                <div class="col-lg-7">
+                  <input id="first-name" type="text" class="form-control" placeholder="Your first name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="last-name" class="col-lg-3 control-label">Last name:</label>
+                <div class="col-lg-7">
+                  <input id="last-name" type="text" class="form-control" placeholder="Your last name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-3 control-label">E-mail Address:</label>
+                <div class="col-lg-7">
+                  <input id="user-email" type="email" class="form-control" placeholder="Your e-mail address" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email-confirm" class="sr-only col-lg-3 control-label">Confirm your e-mail address:</label>
+                <div class="col-lg-7">
+                  <input id="user-email-confirm" type="email" class="form-control" placeholder="Confirm your e-mail address" />
+                  <span class="help-block">Please rewrite your e-mail address for confirmation.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-login" class="col-lg-3 control-label">User name:</label>
+                <div class="col-lg-7">
+                  <input id="user-login" type="text" class="form-control" placeholder="Choose an user name" />
+                  <span class="help-block">You may use letters, numbers, and periods.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-password" class="col-lg-3 control-label">Password:</label>
+                <div class="col-lg-7">
+                  <input id="user-password" type="password" class="form-control" placeholder="Choose a password" />
+                  <span class="help-block">You may use any combination of (at least 8) letters, numbers, and symbols ( + - * @ # ~ ¬ . ).</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-password-confirm" class="sr-only col-lg-3 control-label">Confirm your e-mail address:</label>
+                <div class="col-lg-7">
+                  <input id="user-password-confirm" type="password" class="form-control" placeholder="Confirm your password" />
+                  <span class="help-block">Please retype your password for confirmation.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-dob" class="col-lg-3 control-label">Date of birth:</label>
+                <div class="input-group date col-lg-offset-4 col-lg-5" id="dob-datepicker" data-date-format="YYYY-MM-DD">
+                  <input id="user-dob" type="text" class="form-control" placeholder="Your date of birth" />
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div><!-- /.input-group #dob-datepicker -->
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Gender:</label>
+                <div class="col-lg-7">
+                  <div>
+                    <label class="radio-inline">
+                      <input type="radio" name="user-gender" id="user-gender-male" value="male" checked> Male
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="user-gender" id="user-gender-female" value="female"> Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <p class="col-lg-offset-3 col-lg-7 text-muted"><b>Confirm us that you are not a robot:</b></p>
+              </div>
+
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-3 control-label">
+                  <p>The words at the right come from scanned books. By typing them, you help to digitize old texts.</p>
+                </div>
+                <div class="col-lg-5 text-right">
+                  <a href="http://recaptcha.net/learnmore.html"><img title="See a live demo of a reCAPTCHA" alt="reCAPTCHA example" src="images/reCAPTCHA_Sample_White.png" width="305px" border="0"></a>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-lg-offset-8 col-lg-2">
+                  <button type="submit" class="form-control btn btn-info">Send</button>
+                </div>
+              </div>
+
+            </form><!-- /.form-horizontal #signup-form -->
+
+            <hr />
+
+          </section><!-- /#signup-block -->
 
         </div><!-- /.col-md-9 #doc-content -->
 
         <div class="col-md-3" id="sidebar">
           <section id="side-features">
             <h4 class="text-info">Features and Promos</h4>
-            <p><small class="lipsum-iv"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
           </section><!-- /#side-features -->
           <section id="side-news">
             <hgroup>
               <h4 class="text-info">Updates</h4>
               <h5><big>May 2014</big></h5>
             </hgroup>
-            <p><small class="lipsum-v"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
             <h5><big>April 2014</big></h5>
-            <p><small class="lipsum-v"></small></p>
+            <p><small class="lipsum-xiii"></small></p>
           </section><!-- /#side-news -->
           <section id="side-contact">
             <h4 class="text-info">Contact</h4>
@@ -303,6 +333,39 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <!-- Bootstrap framework core javascript files (ver. 3.1.1) -->
     <script src="js/bootstrap.js" type="text/javascript"></script>
+    <!-- reCAPTCHA javascript files (ver. Ajax) -->
+    <script src="js/recaptcha_ajax.js" type="text/javascript"></script>
+    <!-- Moment for date/time pickers (ver. 2.6.0) -->
+    <script src="js/moment.js" type="text/javascript"></script>
+    <!-- Date/Time picker for Bootstrap (ver. 3.0.0) -->
+    <script src="js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!-- LANGUAGE - BEGIN                                                                          -->
+    <!-- WARNING: This block includes language-locale dependant code                               -->
+    <script src="js/locale/bootstrap-datetimepicker.en-gb.js" type="text/javascript"></script><!-- -->
+    <!-- LANGUAGE - END                                                                            -->
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // 1st
+      });
+      $(window).load(function() {
+        // 2nd
+        var now = new Date();
+        var year = now.getFullYear() - 5;
+        $("#dob-datepicker").data("DateTimePicker")/*.setMaxDate(new Date(year+"-01-01"))*/;
+      });
+      $(function () {
+        $("#dob-datepicker").datetimepicker({
+          showToday: true,
+          pickTime: false,
+          useStrict: true,
+          /* LANGUAGE - BEGIN                                            */
+          /* WARNING: This block contains language-locale dependant code */
+          language: 'en-gb' /*                                           */
+          /* LANGUAGE - END                                              */
+        });
+      });
+    </script>
 
   </body>
 </html>
