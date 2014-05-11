@@ -1,0 +1,136 @@
+/*!
+ * OptiSoft Web Platform v1.0.0
+ *
+ * Answer sheet designer styles
+ *
+ * Copyright 2014 OptiSoft, Inc.
+ */
+
+/* Answer sheet designer fonts
+=========================================================== */
+
+@font-face {
+  font-family: 'Linux Biolinum O';
+  src: url('../fonts/LinBiolinum.otf') format('opentype'), url('../fonts/LinBiolinum.ttf') format('truetype');
+}
+.glyphcirc {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Linux Biolinum O';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Answer sheet designer glyphs
+=========================================================== */
+.glyphcirc-c0:before {
+  content: "A";
+}
+.glyphcirc-c1:before {
+  content: "\2460";
+}
+.glyphcirc-c2:before {
+  content: "\2461";
+}
+.glyphcirc-c3:before {
+  content: "\2462";
+}
+.glyphcirc-c4:before {
+  content: "\2463";
+}
+.glyphcirc-c5:before {
+  content: "\2464";
+}
+.glyphcirc-c6:before {
+  content: "\2465";
+}
+.glyphcirc-c7:before {
+  content: "\2466";
+}
+.glyphcirc-c8:before {
+  content: "\2467";
+}
+.glyphcirc-c9:before {
+  content: "\2468";
+}
+.glyphcirc-ca:before {
+  content: "\24b6";
+}
+.glyphcirc-cb:before {
+  content: "\24b7";
+}
+.glyphcirc-cc:before {
+  content: "\24b8";
+}
+.glyphcirc-cd:before {
+  content: "\24b9";
+}
+.glyphcirc-ce:before {
+  content: "\24ba";
+}
+.glyphcirc-cf:before {
+  content: "\24bb";
+}
+.glyphcirc-cg:before {
+  content: "\24bc";
+}
+.glyphcirc-ch:before {
+  content: "\24bd";
+}
+.glyphcirc-ci:before {
+  content: "\24be";
+}
+.glyphcirc-cj:before {
+  content: "\24bf";
+}
+.glyphcirc-ck:before {
+  content: "\24c0";
+}
+.glyphcirc-cl:before {
+  content: "\24c1";
+}
+.glyphcirc-cm:before {
+  content: "\24c2";
+}
+.glyphcirc-cn:before {
+  content: "\24c3";
+}
+.glyphcirc-co:before {
+  content: "\24c4";
+}
+.glyphcirc-cp:before {
+  content: "\24c5";
+}
+.glyphcirc-cq:before {
+  content: "\24c6";
+}
+.glyphcirc-cr:before {
+  content: "\24c7";
+}
+.glyphcirc-cs:before {
+  content: "\24c8";
+}
+.glyphcirc-ct:before {
+  content: "\24c9";
+}
+.glyphcirc-cu:before {
+  content: "\24ca";
+}
+.glyphcirc-cv:before {
+  content: "\24cb";
+}
+.glyphcirc-cw:before {
+  content: "\24cc";
+}
+.glyphcirc-cx:before {
+  content: "\24cd";
+}
+.glyphcirc-cy:before {
+  content: "\24ce";
+}
+.glyphcirc-cz:before {
+  content: "\24cf";
+}
