@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'OptiSoft-Logotypes';
+	src:url('fonts/OptiSoft-Logotypes.eot?72xjf6');
+	src:url('fonts/OptiSoft-Logotypes.eot?#iefix72xjf6') format('embedded-opentype'),
+		url('fonts/OptiSoft-Logotypes.woff?72xjf6') format('woff'),
+		url('fonts/OptiSoft-Logotypes.ttf?72xjf6') format('truetype'),
+		url('fonts/OptiSoft-Logotypes.svg?72xjf6#OptiSoft-Logotypes') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-logo- {
+	font-family: 'OptiSoft-Logotypes';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo-OptiSoftn:before {
+	content: "\30";
+}
+.icon-logo-OptiGraden:before {
+	content: "\31";
+}
+.icon-logo-OptiSurveyn:before {
+	content: "\32";
+}
+.icon-logo-OptiLabn:before {
+	content: "\33";
+}

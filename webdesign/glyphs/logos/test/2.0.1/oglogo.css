@@ -1,0 +1,146 @@
+.os-sans-upright-normal, .os-sans-italic-normal, .os-sans-oblique-normal,
+.os-sans-upright-bold, .os-sans-italic-bold, .os-sans-oblique-bold {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.os-serif-upright-normal, .os-serif-italic-normal, .os-serif-oblique-normal,
+.os-serif-upright-bold, .os-serif-italic-bold, .os-serif-oblique-bold
+{
+  font-family: "Goudy Old Style", "Georgia", "Times", serif;
+}
+
+.os-sans-upright-normal, .os-sans-upright-bold, .os-serif-upright-normal, .os-serif-upright-bold {
+  font-style: normal;
+}
+
+.os-sans-italic-normal, .os-sans-italic-bold, .os-serif-italic-normal, .os-serif-italic-bold {
+  font-style: italic;
+}
+
+.os-sans-oblique-normal, .os-sans-oblique-bold, .os-serif-oblique-normal, .os-serif-oblique-bold {
+  font-style: oblique;
+}
+
+.os-sans-upright-bold, .os-sans-italic-bold, .os-sans-oblique-bold,
+.os-serif-upright-bold, .os-serif-italic-bold, .os-serif-oblique-bold {
+  font-weight: bold;
+}
+
+.os-sans-upright-normal, .os-sans-italic-normal, .os-sans-oblique-normal,
+.os-serif-upright-normal, .os-serif-italic-normal, .os-serif-oblique-normal {
+  font-weight: normal;
+}
+
+.os-logo:before {
+  content: "OptiSoft";
+}
+
+.os-gd-logo:before {
+  content: "OptiGrade";
+}
+
+.os-sv-logo:before {
+  content: "OptiSurvey";
+}
+
+.os-lb-logo:before {
+  content: "OptiLab";
+}
+
+.os-mark:before {
+  font-family: "Arial Unicode MS", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  content: "\2713";
+  display: inline-block;
+  color: #FF0000;
+}
+
+.os-logo .os-mark {
+  margin-left: -3.8em;
+  margin-right: +3.1em;
+}
+
+.os-sans-upright-normal .os-mark {
+  margin-left: -3.71em;
+  margin-right: +2.9em;
+}
+
+.os-sans-italic-normal .os-mark, .os-sans-oblique-normal .os-mark {
+  margin-left: -3.72em;
+  margin-right: +2.9em;
+}
+
+.os-sans-upright-bold .os-mark {
+  margin-left: -3.91em;
+  margin-right: +3.1em;
+}
+
+.os-sans-italic-bold .os-mark, .os-sans-oblique-bold .os-mark {
+  margin-left: -3.98em;
+  margin-right: +3.2em; 
+}
+
+.os-serif-upright-normal .os-mark {
+  margin-left: -3.46em;    
+  margin-right: +2.65em;    
+}
+
+.os-serif-italic-normal .os-mark, .os-serif-oblique-normal .os-mark {
+  margin-left: -3.05em;    
+  margin-right: +2.2em;    
+}
+
+.os-serif-upright-bold .os-mark {
+  margin-left: -3.5em;    
+  margin-right: +2.66em;    
+}
+
+.os-serif-italic-bold .os-mark, .os-serif-oblique-bold .os-mark {
+  margin-left: -3.15em;    
+  margin-right: +2.31em;    
+}
+
+.os-black100, .os-black, .os-white0 {
+  fill: #000000;
+}
+
+.os-black90, .os-white10 {
+  fill: #191919;
+}
+
+.os-black80, .os-white20 {
+  fill: #333333;
+}
+
+.os-black70, .os-white30 {
+  fill: #4C4C4C;
+}
+
+.os-black60, .os-white40 {
+  fill: #666666;
+}
+
+.os-black50, .os-white50 {
+  fill: #7F7F7F;
+}
+
+.os-black40, .os-white60 {
+  fill: #999999;
+}
+
+.os-black30, .os-white70 {
+  fill: #B2B2B2;
+}
+
+.os-black20, .os-white80 {
+  fill: #CCCCCC;
+}
+
+.os-black10, .os-white90 {
+  fill: #E5E5E5;
+}
+
+.os-black0, .os-white100, .os-white {
+  fill: #FFFFFF;
+}
