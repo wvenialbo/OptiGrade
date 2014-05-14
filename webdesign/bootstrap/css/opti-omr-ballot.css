@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "OMR Ballot Symbols";
+    src:url("../fonts/opti-omr-ballot.eot?xrfsr1");
+    src:url("../fonts/opti-omr-ballot.eot?#iefixxrfsr1") format("embedded-opentype"),
+        url("../fonts/opti-omr-ballot.woff?xrfsr1") format("woff"),
+        url("../fonts/opti-omr-ballot.ttf?xrfsr1") format("truetype"),
+        url("../fonts/opti-omr-ballot.svg?xrfsr1#opti-omr-ballot") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.ballot {
+    font-family: "OMR Ballot Symbols";
+}
+@font-face {
+    font-family: "OMR Ballot Reversed";
+    src:url("../fonts/opti-omr-ballot-reversed.eot?-4457hd");
+    src:url("../fonts/opti-omr-ballot-reversed.eot?#iefix-4457hd") format("embedded-opentype"),
+        url("../fonts/opti-omr-ballot-reversed.woff?-4457hd") format("woff"),
+        url("../fonts/opti-omr-ballot-reversed.ttf?-4457hd") format("truetype"),
+        url("../fonts/opti-omr-ballot-reversed.svg?-4457hd#opti-omr-ballot-reversed") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.ballot-rev {
+    font-family: "OMR Ballot Reversed";
+}
+.ballot, .ballot-rev {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ballot-0:before {
+    content: "\30";
+}
+.ballot-1:before {
+    content: "\31";
+}
+.ballot-2:before {
+    content: "\32";
+}
+.ballot-3:before {
+    content: "\33";
+}
+.ballot-4:before {
+    content: "\34";
+}
+.ballot-5:before {
+    content: "\35";
+}
+.ballot-6:before {
+    content: "\36";
+}
+.ballot-7:before {
+    content: "\37";
+}
+.ballot-8:before {
+    content: "\38";
+}
+.ballot-9:before {
+    content: "\39";
+}
+.ballot-A:before {
+    content: "\41";
+}
+.ballot-B:before {
+    content: "\42";
+}
+.ballot-C:before {
+    content: "\43";
+}
+.ballot-D:before {
+    content: "\44";
+}
+.ballot-E:before {
+    content: "\45";
+}
+.ballot-F:before {
+    content: "\46";
+}
+.ballot-G:before {
+    content: "\47";
+}
+.ballot-H:before {
+    content: "\48";
+}
+.ballot-I:before {
+    content: "\49";
+}
+.ballot-J:before {
+    content: "\4a";
+}
+.ballot-K:before {
+    content: "\4b";
+}
+.ballot-L:before {
+    content: "\4c";
+}
+.ballot-M:before {
+    content: "\4d";
+}
+.ballot-N:before {
+    content: "\4e";
+}
+.ballot-O:before {
+    content: "\4f";
+}
+.ballot-P:before {
+    content: "\50";
+}
+.ballot-Q:before {
+    content: "\51";
+}
+.ballot-R:before {
+    content: "\52";
+}
+.ballot-S:before {
+    content: "\53";
+}
+.ballot-T:before {
+    content: "\54";
+}
+.ballot-U:before {
+    content: "\55";
+}
+.ballot-V:before {
+    content: "\56";
+}
+.ballot-W:before {
+    content: "\57";
+}
+.ballot-X:before {
+    content: "\58";
+}
+.ballot-Y:before {
+    content: "\59";
+}
+.ballot-Z:before {
+    content: "\5a";
+}
+.ballot-a:before {
+    content: "\61";
+}
+.ballot-b:before {
+    content: "\62";
+}
+.ballot-c:before {
+    content: "\63";
+}
+.ballot-d:before {
+    content: "\64";
+}
+.ballot-e:before {
+    content: "\65";
+}
+.ballot-f:before {
+    content: "\66";
+}
+.ballot-g:before {
+    content: "\67";
+}
+.ballot-h:before {
+    content: "\68";
+}
+.ballot-i:before {
+    content: "\69";
+}
+.ballot-j:before {
+    content: "\6a";
+}
+.ballot-k:before {
+    content: "\6b";
+}
+.ballot-l:before {
+    content: "\6c";
+}
+.ballot-m:before {
+    content: "\6d";
+}
+.ballot-n:before {
+    content: "\6e";
+}
+.ballot-o:before {
+    content: "\6f";
+}
+.ballot-p:before {
+    content: "\70";
+}
+.ballot-q:before {
+    content: "\71";
+}
+.ballot-r:before {
+    content: "\72";
+}
+.ballot-s:before {
+    content: "\73";
+}
+.ballot-t:before {
+    content: "\74";
+}
+.ballot-u:before {
+    content: "\75";
+}
+.ballot-v:before {
+    content: "\76";
+}
+.ballot-w:before {
+    content: "\77";
+}
+.ballot-x:before {
+    content: "\78";
+}
+.ballot-y:before {
+    content: "\79";
+}
+.ballot-z:before {
+    content: "\7a";
+}
+.ballot-Ntilde:before {
+    content: "\d1";
+}
+.ballot-ntilde:before {
+    content: "\f1";
+}
+.ballot-box:before {
+    content: "\2610";
+}
+.ballot-box-check:before {
+    content: "\2611";
+}
+.ballot-box-X:before {
+    content: "\2612";
+}
+.ballot-circle-check:before {
+    content: "\2713";
+}
+.ballot-circle-check-heavy:before {
+    content: "\2714";
+}
+.ballot-circle-X:before {
+    content: "\2717";
+}
+.ballot-circle-X-heavy:before {
+    content: "\2718";
+}
+.ballot-circle:before {
+    content: "\e000";
+}
+.ballot-circle-check-alt:before {
+    content: "\e001";
+}
+.ballot-circle-X-alt:before {
+    content: "\e002";
+}
+.ballot-circle-striped:before {
+    content: "\e003";
+}
+.ballot-circle-filled:before {
+    content: "\e004";
+}
+.ballot-circle-spotted:before {
+    content: "\e005";
+}
+.ballot-circle-scratched:before {
+    content: "\e006";
+}
+.ballot-circle-scratched-alt:before {
+    content: "\e007";
+}
+.ballot-check-mark:before {
+    content: "\e008";
+}
+.ballot-check-mark-heavy:before {
+    content: "\e009";
+}
+.ballot-X-mark:before {
+    content: "\e00a";
+}
+.ballot-X-mark-heavy:before {
+    content: "\e00b";
+}
+.ballot-object:before {
+    content: "\fffc";
+}
+.ballot-unknown:before {
+    content: "\fffd";
+}

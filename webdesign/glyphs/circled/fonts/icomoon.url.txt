@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="http://i.icomoon.io/public/temp/61a96eb276/CircledSymbols/style.css">

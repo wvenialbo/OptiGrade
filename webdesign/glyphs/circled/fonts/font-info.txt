@@ -1,0 +1,64 @@
+----------------------------------------------------------------
+Glyph Set Information
+----------------------------------------------------------------
+Name           : OptiSoft OMR Ballot Symbols
+URL            : https://github.com/wvenialbo/OptiGrade
+Designer       : Waldemar Villamayor-Venialbo
+Designer's URL : https://github.com/wvenialbo
+License        : Creative Commons 4.0
+License URL    : http://creativecommons.org/licenses/by-sa/4.0/
+Grid Size      : 2048
+Full set       : 313 (188+125) glyphs
+Medium set     : 188 (85+103) glyphs
+Mini set       : 85 glyphs
+----------------------------------------------------------------
+Font Information
+----------------------------------------------------------------
+Font Name                  : OptiSoft-OMR-Ballot-Symbols
+Font Family                : OptiSoft OMR Ballot Symbols
+Generic Name               : OptiSoft OMR Ballot Symbols
+Weight                     : Regular (400 Roman Normal)
+Version                    : 2.0.2
+File Base Name             : optisoft-ballot-symbols-
+Class Prefix               : ballot-sym-
+Class Postfix              : n
+Support IE 7 (and older)   : yes/no
+Include Metadata in Fonts  : yes
+Encode & Embed Font in CSS : no
+Use Class Selector         : yes (instead of attribute selector)
+                             .circled-sym-
+Glyphs                     : 43 (41+2)
+Font Size (WOFF)           : 10884 bytes
+Grid Size                  : 2048
+Description                : This font file contains glyphs used
+                             in answer sheets for Optical Mark
+                             Recognition (OMR) applications.
+Quick Usage URL            : http://i.icomoon.io/public/temp/61a9
+                             6eb276/CircledSymbols/style.css
+----------------------------------------------------------------
+Font Metrics
+----------------------------------------------------------------
+Em Square Height (Power of 2) : 2048
+Baseline Height (% Em)        : 20.00 (410)
+Whitespace Width (% Em)       : 27.78 (569)
+----------------------------------------------------------------
+Font Metadata
+----------------------------------------------------------------
+URL            : https://github.com/wvenialbo/OptiGrade
+Designer       : Waldemar Villamayor-Venialbo
+Designer's URL : https://github.com/wvenialbo
+License        : Creative Commons 4.0
+License URL    : http://creativecommons.org/licenses/by-sa/4.0/
+----------------------------------------------------------------
+Version Information
+----------------------------------------------------------------
+Major    : 2
+Minor    : 0
+Revision : 2
+----------------------------------------------------------------
+Copyright Notice
+----------------------------------------------------------------
+Copyright (C) 1997-2014, OptiSoft Ltd. All rights reserved.
+
+
+"myriad-pro-n3", "myriad-pro", myriad, verdana, arial, sans-serif

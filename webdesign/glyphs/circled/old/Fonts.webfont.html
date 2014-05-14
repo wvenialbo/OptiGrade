@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>OptiGrade's Circled True Type Font</title>
+<style type="text/css">
+@font-face {
+    font-family: 'Test Circled Symbols';
+    src:url('circled.webfont.ttf?ipfha3') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+th.circled {font-family:'Test Circled Symbols';font-size:20pt;font-weight:normal;}
+th {width:40px;}
+.hdr {width:72px;}
+</style>
+<script language="JavaScript1.2">
+function WriteFonts(title, ini, end)
+{
+	var wd = 40 * (end-ini+1) + 72;
+	document.writeln("<table><tr><th colspan=\"" + (end-ini+2) + "\" style=\"width:" + wd + "px;\">" + title + "</th></tr>");
+	document.writeln("<tr><th class=\"hdr\">ANSI #</th>");
+	for (var code = ini; code <= end; ++code)
+	{
+		document.writeln("<th>" + code + "</th>");
+	}
+	document.writeln("</tr><tr><th>SYMBOL</th>");
+	var chr;
+	for (var code = ini; code <= end; ++code)
+	{
+		if (code < 100)
+			chr = "0" + code;
+		else
+			chr = "" + code;
+		var tags = "<th class=\"circled\">&#" + chr + ";</th>";
+		document.writeln(tags);
+	}
+	document.writeln("</tr></table><br>");
+}
+</script>
+</head>
+<body>
+<script language="JavaScript1.2">
+WriteFonts("Check Marks", 33, 34);
+WriteFonts("Bad marks", 35, 38);
+WriteFonts("Filling marks", 40, 41);
+WriteFonts("Blank Numbers", 48, 57);
+WriteFonts("Marked Numbers", 81, 90);
+WriteFonts("Blank Letters", 97, 103);
+WriteFonts("Marked Letters", 65, 71);
+</script>
+</body>
+</html>
